@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.couple {
+  width: 175px;
+  height: 220px;
+  background: url('random.svg');
+  animation: splashit 0.7s steps(3) infinite;
+  position: absolute;
+  left: 50%;
+  margin-left: -360px;
+  top: 140px;
+}
+@keyframes splashit {
+  100% { background-position:500px; }
+}
+
+@keyframes bk {
+  100% { background-position: -200% 0; }
+}
+</style>
+</head>
+<body>
+<svg height="700" width="1000" >
+  <defs>
+    <linearGradient id="sun" x1="0%" y1="10%" x2="0%" y2="100%">
+
+      <stop offset="100%" style="stop-color:#FFEDA3;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#CF5B00;stop-opacity:1" />
+    </linearGradient>
+     <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="beach" x1="0%" y1="10%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9C2A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+<rect id ="svg-background" width="2000" height="500" x="0" y="0" fill="url(#grad1)"></rect>
+<circle id="sun" cx="350" cy="250 " r="100" fill="url(#sun)"></circle>   
+<rect id ="beach" width="2000" height="300" x="0" y="250" fill="url(#beach)"></rect>  
+<path id="wave1" d="M271 271  C 346 260 379 270 400 272 C 400 272 480 260 540 270 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave2" d="M100 371  C 100 361 550 371 571 372 C 571 373 650 360 680 371 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave3" d="M800 371  C 800 361 850 371 871 372 C 871 373 850 360  880 371" fill="#C92D00" fill-opacity="0.5"></path>
+
+<path id="wave4" d="M700 341  C 700 331 750 341 771 342 C 771 343 850 350  880 341" fill="#C92D00" fill-opacity="0.5"></path>
+
+<path id="wave5" d="M0 341  C 146 331 179 341 200 348 C 200 343 280 350 340 341 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave6" d="M500 341  C 500 331 550 341 571 342 C 571 343 650 350  680 341" fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave7" d="M71 271  C 146 260 179 270 200 272 C 200 272 280 260 240 270 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave8" d="M871 271  C 846 260 879 270 800 272 C 800 272 920 260 940 270 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave9" d="M71 290  C 46 290 79 273 100 292 C 100 302 120 282 140 290 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave10" d="M871 290  C 869 290 877 273 869 292 C 900 302 920 282 940 290 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="wave11" d="M120 301  C 120 294 570 294 591 295 C 591 303 670 284 690 290 " fill="#C92D00" fill-opacity="0.5"></path>
+<path id="island-far" d="M0 250 L 0 225  C 0 220 50 220 100 230 C 100 230 150 220 200 250  "> </path>
+<path id="island-near" d="M0 550 L 0 425  C 100 395 350 420 500 430 C 600 413 740 420 821 550 "></path>
+<path id="boat" d="M673,338a8,8 0 1,0 16,0a8,8 0 1,0 -16,0 M673,355a8,16 0 1,0 16,0a8,16 0 1,0 -16,0 M 600 371 L 900 371 C 900 371 750 419 600 371 M 650 290 L 734 416 L 731 417 L 650 290 "></path>
+
+<path id="bird1-r" d="M 500 200 C 500 200 515 215 500 195"></path>
+
+<path id="bird2-r" d="M 500 180 C 500 180 515 195 500 175"></path>
+<path id="bird3-r" d="M 480 180 C 480 180 495 195 480 175"></path>
+
+</svg>
+
+
+</body>
+</html>
