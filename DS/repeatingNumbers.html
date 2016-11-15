@@ -1,0 +1,33 @@
+<!Doctype Html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Repeating numbers</h1>
+    <label>[1, 2, 3, 4,5, 6, 2, 5, 6, 9]</label>
+    <input type="submit" onclick="submit()"/>
+    <label id="result"></label>
+    <script>
+      var arr = [1, 2, 3, 4,5, 6, 2, 5, 6, 9];
+      var array=[]
+      var count=[];
+      for(i =0; i<= arr.length; i++){
+        count[arr[i]]=0;
+      }
+      function submit(){
+        for (i in arr)
+        {
+          console.log(arr[i],count[arr[i]])
+          count[arr[i]]++;
+        }
+        for (i in count){
+          if (count[i]>1)
+            array.push(i);
+        }
+        document.getElementById('result').innerHTML= "Repeating numbers->"+ array.toString()
+      }
+    </script>
+  </body>
+
+
+</html>

@@ -1,0 +1,47 @@
+<!--Convert array [1,2,3,4,5,6,7,8] into [2,1,4,3,6,5,8,7]. Note edge case where number of elements are odd.-->
+<!Doctype Html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Convert array [1,2,3,4,5,6,7,8] into [2,1,4,3,6,5,8,7]. Note edge case where number of elements are odd.</h1>
+    <label>[1,2,3,4,5,6,7,8,9]</label>
+    <input type="submit" onclick="submit('result1')"/>
+    <br/>
+    <label id="result1"></label>
+<br/><br/>
+    <label>[1,2,3,4,5,6,7,8]</label>
+    <input type="submit" onclick="submit('result2')"/>
+    <br/>
+    <label id="result2"></label>
+
+    <script>
+      var arr1 = [1,2,3,4,5,6,7,8,9];
+      var arr2 = [1,2,3,4,5,6,7,8];
+      function submit(val){
+        if(val==='result1'){
+          arr = arr1
+        }
+        else {
+          arr= arr2
+        }
+        if((arr.length%2)==0)
+        {
+          mid= Math.floor(arr.length/2) + 1;
+        }
+
+        for(i in arr){
+          if (i%2 != 0){
+            temp = arr[i]
+            arr[i]= arr[i-1];
+            arr[i-1]= temp;
+          }
+        }
+
+        document.getElementById(val).innerHTML=arr.toString()
+      }
+    </script>
+  </body>
+
+
+</html>

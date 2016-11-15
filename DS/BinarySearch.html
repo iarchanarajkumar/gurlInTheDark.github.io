@@ -1,0 +1,41 @@
+<!Doctype Html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Binary Search</h1>
+    <input type="text" id="key"/>
+    <input type="submit" onclick="getData()"/>
+    <label id="result"></label>
+    <script>
+      var arr = [1, 4, 6,7, 89, 344, 7576, 9827];
+      var low, high, mid;
+      function binarysearch(key, a, low, high){
+        mid= Math.floor((low+high)/2)
+        if (low>high){
+          return "not found"
+        }
+        else if(a[mid] == key )
+        {
+        return  "index->"+ mid
+        }
+        else if(a[mid]<key){
+        return  binarysearch(key, a, mid+1, high);
+        }
+        else{
+          return binarysearch(key, a, low, mid-1);
+        }
+
+
+      }
+      function getData(){
+        var key = document.getElementById('key').value;
+        console.log(key)
+        low= 0, high = arr.length;
+        document.getElementById('result').innerHTML= binarysearch(key, arr, low, high)
+      }
+    </script>
+  </body>
+
+
+</html>
