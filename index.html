@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="portfolio/portfolio.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <ul class="navbar list-inline">
+          <li class="navbar-brand">
+          </li>
+
+          <li class="nav nav-tabs pull-right" id="contact_link" onclick="portfolio.contactMe()">
+            Contact
+          </li>
+
+          <li class="nav nav-tabs pull-right" id="skills_link" onclick="portfolio.skillSet()">
+            Skills
+          </li>
+          <li class="nav nav-tabs pull-right" id="home_link" onclick="portfolio.goHome()" >
+            Home
+          </li>
+
+      </ul>
+      <div class="jumbotron" id="home">
+        <h1 class="text-center">
+          <div>HELLO!</div>
+          <div>  MY NAME IS</div>
+          <div id="name"> <b>ARCHANA</b></div>
+          <div>&</div>
+          <div>I'M A</div>
+          <div class="profile"> FRONT END DEVELOPER</div>
+      </h1>
+    </div>
+    <div class="jumbotron" id="skills">
+    <div class="skillset text-center">
+      <div class="skills">HTML</div>
+      <div class="skills">LESS/CSS</div>
+      <div class="skills">Bootstrap3</div>
+      <div class="skills">Javascript</div>
+      <div class="skills">JQuery</div>
+      <div class="skills">AngularJS</div>
+      <div class="skills">UnderscoreJS</div>
+      <div class="skills">RXJS </div>
+      <div class="skills">React</div>
+      <div class="skills">Redux</div>
+      <div class="skills">NodeJS</div>
+      <div class="skills"> Karma/Jasmine</div>
+      <div class="skills"> Npm</div>
+      <div class="skills">Grunt</div>
+      <div class="skills">Webpack</div>
+    </div>
+  </div>
+  <div class="jumbotron" id="contact">
+    <h1 class="text-center">
+      CONTACT ME
+  </h1>
+  <div class="icons text-center">
+    <h3><span class="glyphicon glyphicon-home"> I live in Bangalore, India.</span> </h3>
+    <h3><span class="glyphicon glyphicon-envelope"> archana.rajkumar30@gmail.com</span></h3>
+    <hr/>
+    <span><a href="https://www.linkedin.com/in/archanarajkumar"><img  id="linkedInIcon" />LinkedIn</a></span>
+    <span><a href="https://twitter.com/gurlInTheDark30"><img id="twitterIcon">Twitter</a></span>
+    <span><a href="mailto:archanarajkumar30@gmail.com"><img  id="emailMeIcon" />E-mail</a></span>
+  </div>
+</div>
+    <script>
+      var portfolio={};
+      portfolio.contactMe= function(){
+        $('#home').css("display", "none");
+        $('#skills').css("display", "none");
+        $('#contact').css("display", "block");
+
+          $('#home_link').css("color", "#85473c");
+          $('#skills_link').css("color", '#85473c');
+          $('#contact_link').css("color", "#261447");
+      }
+      portfolio.skillSet= function(){
+        $('#home').css("display", "none");
+        $('#skills').css("display", "block");
+        $('#contact').css("display", "none");
+
+        $('#home_link').css("color", "#85473c");
+        $('#contact_link').css("color", '#85473c');
+        $('#skills_link').css("color", "#261447");
+      }
+      portfolio.goHome= function(){
+        $('#home').css("display", "block");
+        $('#skills').css("display", "none");
+        $('#contact').css("display", "none");
+
+        $('#skills_link').css("color", "#85473c");
+        $('#contact_link').css("color", '#85473c');
+        $('#home_link').css("color", "#261447");
+      }
+
+
+    </script>
+  </body>
+</html>
