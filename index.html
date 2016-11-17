@@ -1,107 +1,188 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="Portfolio/portfolio.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="container">
-      <ul class="navbar list-inline">
-          <li class="navbar-brand">
-          </li>
-
-          <li class="nav nav-tabs pull-right" id="contact_link" onclick="portfolio.contactMe()">
-            Contact
-          </li>
-
-          <li class="nav nav-tabs pull-right" id="skills_link" onclick="portfolio.skillSet()">
-            Skill
-          </li>
-          <li class="nav nav-tabs pull-right" id="home_link" onclick="portfolio.goHome()" >
-            Home
-          </li>
-
-      </ul>
-      <div class="jumbotron" id="home">
-        <h1 class="text-center">
-          <div>HELLO!</div>
-          <div>  MY NAME IS</div>
-          <div id="name"> <b>ARCHANA</b></div>
-          <div>&</div>
-          <div>I'M A</div>
-          <div class="profile"> FRONT END DEVELOPER</div>
-      </h1>
-    </div>
-    <div class="jumbotron" id="skills">
-    <div class="skillset text-center">
-      <div class="skills">HTML</div>
-      <div class="skills">LESS/CSS</div>
-      <div class="skills">Bootstrap3</div>
-      <div class="skills">Javascript</div>
-      <div class="skills">JQuery</div>
-      <div class="skills">AngularJS</div>
-      <div class="skills">UnderscoreJS</div>
-      <div class="skills">RXJS </div>
-      <div class="skills">React</div>
-      <div class="skills">Redux</div>
-      <div class="skills">NodeJS</div>
-      <div class="skills"> Karma/Jasmine</div>
-      <div class="skills"> Npm</div>
-      <div class="skills">Grunt</div>
-      <div class="skills">Webpack</div>
-    </div>
+<head>
+	<title>Portfolio</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta charset="utf-8">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="Portfolio/portfolio.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="welcome">
+    <p>Hello! My name is ARCHANA & I'm a FRONT END DEVELOPER</p>
+    <p>Press enter to proceed... <span>|</span></p>
   </div>
-  <div class="jumbotron" id="contact">
-    <h1 class="text-center">
-      CONTACT ME
-  </h1>
-  <div class="icons text-center">
-    <h3><span class="glyphicon glyphicon-home"> I live in Bangalore, India.</span> </h3>
-    <h3><span class="glyphicon glyphicon-envelope"> archana.rajkumar30@gmail.com</span></h3>
-    <hr/>
-    <span><a href="https://www.linkedin.com/in/archanarajkumar"><div  id="linkedInIcon" /></a></span>
-    <span><a href="https://twitter.com/gurlInTheDark30"><div id="twitterIcon"/></a></span>
-    <span><a href="mailto:archanarajkumar30@gmail.com"><div  id="emailMeIcon" /></a></span>
-  </div>
-</div>
-    <script>
-      var portfolio={};
-      portfolio.contactMe= function(){
-        $('#home').css("display", "none");
-        $('#skills').css("display", "none");
-        $('#contact').css("display", "block");
+  <ul class="navbar list-inline">
+    <li class="navbar-brand"></li>
+    <li class="nav  pull-right" id="contact_link" onclick="portfolio.contactMe()">Contact</li>
+    <li class="nav pull-right" id="skills_link" onclick="portfolio.skillSet()">Skills</li>
+    <li class="nav pull-right" id="work_link" onclick="portfolio.experience()">Experience</li>
+    <li class="nav pull-right" id="home_link" onclick="portfolio.goHome()">Home</li>
+  </ul>
+	<div class="container">
+    <div class="jumbotron" id="home">
+      <div> Every morning in Africa, a Gazelle wakes up, It knows it must run faster than the fastest lion or it will be killed.
+         Every morning a Lion wakes up, It knows it must outrun the slowest Gazelle or it will starve to death. It doesn't matter whether you are a Lion or a Gazelle...
+        when the sun comes up, you'd better be running</div>
+        <div id="run"></div>
+    </div>
 
-          $('#home_link').css("color", "#85473c");
-          $('#skills_link').css("color", '#85473c');
-          $('#contact_link').css("color", "#FFFFFF");
-      }
-      portfolio.skillSet= function(){
-        $('#home').css("display", "none");
-        $('#skills').css("display", "block");
-        $('#contact').css("display", "none");
+		<div class="jumbotron" id="work">
+      <h1 class="text-center">WORK EXPERIENCE</h1>
+      <br/>
+    <ul class="text-center">
+      <li> 4 years Work Experience</li>
+      <li>  Expertise in UI Development using multiple JS/CSS frameworks and tools</li>
+      <li>  Currently at Dreamworks Dedicated Unit @ Technicolor India, Bangalore</li>
+      <li>  Previously employed at CDK Global, Pune</li>
+    </ul>
 
-        $('#home_link').css("color", "#85473c");
-        $('#contact_link').css("color", '#85473c');
-        $('#skills_link').css("color", "#FFFFFF");
-      }
-      portfolio.goHome= function(){
-        $('#home').css("display", "block");
-        $('#skills').css("display", "none");
-        $('#contact').css("display", "none");
+	</div>
+		<div class="jumbotron" id="skills">
+			<div class="skillset text-center">
+				<div class="skills">
+					HTML
+				</div>
+				<div class="skills">
+					LESS/CSS
+				</div>
+				<div class="skills">
+					Bootstrap3
+				</div>
+				<div class="skills">
+					Javascript
+				</div>
+				<div class="skills">
+					JQuery
+				</div>
+				<div class="skills">
+					AngularJS
+				</div>
+        <div class="skills">
+					Ajax
+				</div>
 
-        $('#skills_link').css("color", "#85473c");
-        $('#contact_link').css("color", '#85473c');
-        $('#home_link').css("color", "#FFFFFF");
-      }
+				<div class="skills">
+					UnderscoreJS
+				</div>
+				<div class="skills">
+					RXJS
+				</div>
+				<div class="skills">
+					React
+				</div>
+				<div class="skills">
+					Redux
+				</div>
+				<div class="skills">
+					NodeJS
+				</div>
+				<div class="skills">
+					Karma/Jasmine
+				</div>
+				<div class="skills">
+					Npm
+				</div>
+				<div class="skills">
+					Grunt
+				</div>
+				<div class="skills">
+					Webpack
+				</div>
+			</div>
+		</div>
+		<div class="jumbotron" id="contact">
+			<h1 class="text-center">CONTACT ME</h1>
+			<div class="icons text-center">
+				<div><span class="glyphicon glyphicon-home"></span>I live in Bangalore, India.</div>
+				<div><span class="glyphicon glyphicon-envelope"></span>archana.rajkumar30@gmail.com</div>
+        <br/><br/>
+        <div>You can also catch me on </div>
+				<span><a href="https://www.linkedin.com/in/archanarajkumar" id="linkedInIcon"></a></span> <span><a href="https://twitter.com/gurlInTheDark30" id="twitterIcon"></a></span> <span><a href="mailto:archanarajkumar30@gmail.com" id="emailMeIcon"></a></span>
+			</div>
+		</div>
+		<script>
+		    var portfolio={};
+        $(document).keypress(function(e) {
+          if(e.which == 13) {
+            $('.welcome').hide()
+            $('#run').css('display','block');
+            a = parseInt($("#run").css("left"));
+            b = parseInt($("#run").css("background-position"));
+            //portfolio.move();
+          }
+        });
 
 
-    </script>
-  </body>
+		    portfolio.contactMe= function(){
+		      $('#home').css("display", "none");
+		      $('#skills').css("display", "none");
+		      $('#contact').css("display", "block");
+            $('#work').css("display", "none");
+              $('#work_link').css("color", '#CC978E');
+		        $('#home_link').css("color", "#CC978E");
+		        $('#skills_link').css("color", '#CC978E');
+		        $('#contact_link').css("color", "#FFFFFF");
+		    }
+		    portfolio.skillSet= function(){
+		      $('#home').css("display", "none");
+		      $('#skills').css("display", "block");
+		      $('#contact').css("display", "none");
+          $('#work').css("display", "none");
+          $('#work_link').css("color", '#CC978E');
+		      $('#home_link').css("color", "#CC978E");
+		      $('#contact_link').css("color", '#CC978E');
+		      $('#skills_link').css("color", "#FFFFFF");
+		    }
+		    portfolio.goHome= function(){
+		      $('#home').css("display", "block");
+		      $('#skills').css("display", "none");
+		      $('#contact').css("display", "none");
+          $('#work').css("display", "none");
+
+		      $('#skills_link').css("color", "#CC978E");
+		      $('#contact_link').css("color", '#CC978E');
+          $('#work_link').css("color", '#CC978E');
+		      $('#home_link').css("color", "#FFFFFF");
+		    }
+        portfolio.experience= function(){
+          $('#work').css("display", "block");
+          $('#skills').css("display", "none");
+          $('#contact').css("display", "none");
+          $('#home').css("display", "none");
+
+          $('#skills_link').css("color", "#CC978E");
+          $('#contact_link').css("color", '#CC978E');
+          $('#home_link').css("color", '#CC978E');
+          $('#work_link').css("color", "#FFFFFF");
+        }
+    portfolio.move= function() {
+		var i = 0, x, y;
+		x = parseInt($("#run").css("left"));
+		y = parseInt($("#run").css("background-position"));
+		if (y > -800) {
+			$("#run").css("left", x += 140);
+			$("#run").css("background-position", y -= 150);
+		} else if (y > -2000) {
+			$("#run").css("background-image", "url(Portfolio/imgs/horseman.gif)");
+			$("#run").css("background-position", y -= 150);
+			$("#run").css("left", x -= 140);
+		} else {
+			$("#run").css("left", a);
+			$("#run").css("background-position", b );
+			$("#run").css("background-image", "url(Portfolio/imgs/horseman.gif)");
+		}
+
+	}
+
+
+		</script>
+	</div>
+</body>
 </html>
