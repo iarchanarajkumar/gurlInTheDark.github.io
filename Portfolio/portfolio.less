@@ -30,10 +30,9 @@ body{
   height:100vh;
   width: 100vw;
   padding:10% 5%;
-  text-align: center;
+
 }
 p{
-
   color: #ffffff;
   margin: 0px 0 0 10px;
   white-space: nowrap;
@@ -41,6 +40,9 @@ p{
   width: 100%;
   animation: type 4s steps(65, end);
   font-size: 3em;
+  .smaller{
+    font-size: 1em;
+  }
 }
 
 p:nth-child(2){
@@ -136,7 +138,7 @@ cursor:pointer;
 
 .skills{
   font-size:1.1em;
-height: 170px;
+height: 140px;
 width: 170px;
 border-right: 10px solid  darken(#CC978E, 60%);
 border-top: 10px solid darken(#CC978E, 30%);
@@ -145,6 +147,12 @@ border-left: 10px solid darken(#CC978E, 30%);
 display: inline-block;
 text-align: center;
 padding:30px 30px;
+cursor: pointer;
+&:hover{
+  background: darken(#CC978E, 30%);
+  color:#000;
+  font-weight: bolder;
+}
 }
 
 @keyframes slide {
@@ -188,4 +196,16 @@ background: url(imgs/sprite.svg) 180px 0;
 hr{
 animation:  slide 20s
 width:50%;
+}
+#horse{
+  display: none;
+  float: right;
+    margin-right: 50%;
+    width: 183px;
+    height: 147px;
+    background: url(imgs/horse.png);
+    animation: splashit .7s steps(4) infinite;
+}
+@keyframes splashit {
+  100% { background-position:732px 0px; }
 }

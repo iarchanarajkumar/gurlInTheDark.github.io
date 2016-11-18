@@ -15,8 +15,8 @@
 </head>
 <body>
   <div class="welcome">
-    <p>Hello! My name is ARCHANA & I'm a FRONT END DEVELOPER</p>
-    <p>Press enter to proceed... <span>|</span></p>
+    <p>My name is ARCHANA & I'm a FRONT END DEVELOPER</p>
+    <p class="smaller">Press enter to proceed... <span>|</span></p>
   </div>
   <ul class="navbar list-inline">
     <li class="navbar-brand"></li>
@@ -30,7 +30,7 @@
       <div> Every morning in Africa, a Gazelle wakes up, It knows it must run faster than the fastest lion or it will be killed.
          Every morning a Lion wakes up, It knows it must outrun the slowest Gazelle or it will starve to death. It doesn't matter whether you are a Lion or a Gazelle...
         when the sun comes up, you'd better be running</div>
-        <div id="run"></div>
+        <div id="horse" class="text-center"></div>
     </div>
 
 		<div class="jumbotron" id="work">
@@ -39,7 +39,7 @@
     <ul class="text-center">
       <li> 4 years Work Experience</li>
       <li>  Expertise in UI Development using multiple JS/CSS frameworks and tools</li>
-      <li>  Currently at Dreamworks Dedicated Unit @ Technicolor India, Bangalore</li>
+      <li>  Currently at Dreamworks Animations, India, Bangalore</li>
       <li>  Previously employed at CDK Global, Pune</li>
     </ul>
 
@@ -111,11 +111,28 @@
 		    var portfolio={};
         $(document).keypress(function(e) {
           if(e.which == 13) {
+            if ($('.welcome').is(":visible")){;
+
             $('.welcome').hide()
-            $('#run').css('display','block');
-            a = parseInt($("#run").css("left"));
-            b = parseInt($("#run").css("background-position"));
-            //portfolio.move();
+            $('#home_link').css("color", "#FFFFFF");
+            $('#horse').css('display','block');
+
+          }
+          else if($('#home').is(":visible")){
+            portfolio.experience()
+          }
+          else if($('#work').is(":visible")){
+            portfolio.skillSet()
+          }
+          else if($('#skills').is(":visible")){
+            portfolio.contactMe()
+          }
+          else{
+            $('.welcome').show();
+
+            $('#horse').css('display','none');
+            portfolio.goHome()
+          }
           }
         });
 
@@ -124,8 +141,8 @@
 		      $('#home').css("display", "none");
 		      $('#skills').css("display", "none");
 		      $('#contact').css("display", "block");
-            $('#work').css("display", "none");
-              $('#work_link').css("color", '#CC978E');
+          $('#work').css("display", "none");
+          $('#work_link').css("color", '#CC978E');
 		        $('#home_link').css("color", "#CC978E");
 		        $('#skills_link').css("color", '#CC978E');
 		        $('#contact_link').css("color", "#FFFFFF");
@@ -145,7 +162,6 @@
 		      $('#skills').css("display", "none");
 		      $('#contact').css("display", "none");
           $('#work').css("display", "none");
-
 		      $('#skills_link').css("color", "#CC978E");
 		      $('#contact_link').css("color", '#CC978E');
           $('#work_link').css("color", '#CC978E');
@@ -156,31 +172,11 @@
           $('#skills').css("display", "none");
           $('#contact').css("display", "none");
           $('#home').css("display", "none");
-
           $('#skills_link').css("color", "#CC978E");
           $('#contact_link').css("color", '#CC978E');
           $('#home_link').css("color", '#CC978E');
           $('#work_link').css("color", "#FFFFFF");
         }
-    portfolio.move= function() {
-		var i = 0, x, y;
-		x = parseInt($("#run").css("left"));
-		y = parseInt($("#run").css("background-position"));
-		if (y > -800) {
-			$("#run").css("left", x += 140);
-			$("#run").css("background-position", y -= 150);
-		} else if (y > -2000) {
-			$("#run").css("background-image", "url(Portfolio/imgs/horseman.gif)");
-			$("#run").css("background-position", y -= 150);
-			$("#run").css("left", x -= 140);
-		} else {
-			$("#run").css("left", a);
-			$("#run").css("background-position", b );
-			$("#run").css("background-image", "url(Portfolio/imgs/horseman.gif)");
-		}
-
-	}
-
 
 		</script>
 	</div>
