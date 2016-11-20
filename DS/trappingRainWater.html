@@ -1,0 +1,55 @@
+<!Doctype Html>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Trapping Rain Water</h1>
+    <label>Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+</label>
+    <input type="submit" onclick="submit()"/>
+    <label id="result"></label>
+    <script>
+    //var arr = [3,0,12,2,1,14,4,6];
+    var arr = [3,0,1,0,3];
+
+var boundaries=[], water=0,next=0;
+for(i in arr){
+  next =Number(i)+1;
+  prev=Number(i)-1
+  if(next>=arr.length){
+    arr[next]=0
+  }
+  if(prev<0){
+    arr[prev]=0
+  }
+  if(arr[i]>arr[next] && arr[i]> arr[prev]){
+    boundaries.push(i)
+  }
+}
+console.log(boundaries)
+for (i in boundaries){
+  i = Number(i)
+  if(i+1 == boundaries.length){
+  console.log("water",water)
+  alert(water)
+  break;
+  }
+else{ diff=Math.abs(boundaries[i+1]-boundaries[i])
+ value=Math.min(arr[boundaries[i+1]], arr[boundaries[i]])
+ }
+water= water+ (diff-1)*value;
+
+//subtract water from other indices
+var j
+for(j=1;j<(diff);j++){
+  if((Number(boundaries[i])+j)<=arr.length)
+  //console.debug(i,j, arr[Number(boundaries[i])+j])
+  {water=water-arr[Number(boundaries[i])+j];}
+}
+//console.debug(value)
+}
+    </script>
+  </body>
+
+
+</html>
