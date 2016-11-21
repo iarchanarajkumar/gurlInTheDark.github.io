@@ -15,12 +15,12 @@
 </head>
 <body>
   <div class="welcome">
-    <p>Welcome to the my site!</p>
+    <p>Welcome to my site!</p>
     <p class="smaller">Press enter to proceed... <span>|</span></p>
   </div>
   <ul class="navbar list-inline">
     <li class="navbar-brand"></li>
-    <!--<li class="nav pull-right" id="experience_link" onclick="portfolio.experience()">Quotes</li>-->
+    <li class="nav pull-right" id="experience_link" onclick="portfolio.experience()">Quotes</li>
     <li class="nav  pull-right" id="contact_link" onclick="portfolio.contactMe()">Contact</li>
     <li class="nav pull-right" id="skills_link" onclick="portfolio.skillSet()">Skills</li>
 
@@ -35,7 +35,7 @@
 
     </div>
 
-	<!--	<div class="jumbotron" id="work">
+		<div class="jumbotron" id="work">
       <h1 class="text-center">Favourite Quotes</h1>
       <br/>
       <div> Every morning in Africa, a Gazelle wakes up, It knows it must run faster than the fastest lion or it will be killed.
@@ -43,7 +43,7 @@
         when the sun comes up, you'd better be running</div>
         <div id="horse" class="text-center"></div>
 
-	</div>-->
+	</div>
 		<div class="jumbotron" id="skills">
 			<div class="skillset text-center">
 				<div class="skills">
@@ -132,11 +132,8 @@
             portfolio.contactMe()
           }
           else{
-          //portfolio.experience()
-          $('.welcome').show();
-
-          $('#horse').css('display','none');
-          portfolio.goHome()
+          portfolio.experience()
+          
           }
           }
         });
