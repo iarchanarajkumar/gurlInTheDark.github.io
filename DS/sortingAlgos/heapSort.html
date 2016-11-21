@@ -9,7 +9,7 @@
     <label id="result"></label>
     <script>
     var arr = [4, 1, 3, 2, 16, 9 , 10, 14, 8, 7];
-    function build_heap(arr){
+    /*function build_heap(arr){
       for (i =Math.floor(arr.length/2); i>=1;i--){
           heapify(arr,i)
       }
@@ -45,6 +45,45 @@
     }
     heapsort(arr);
     console.log(arr);
+    */
+    function heapify(a, i) {
+       le = 2*i;
+       ri = 2*i+1;
+       if ((le<=a.length) && (a[le]>a[i]))
+          largest= le
+       else
+          largest =i
+       if ((ri<=heapsize) && (a[ri]>a[largest]))
+          largest = ri
+       if (largest != i) {
+         temp=a[i];
+         a[i]=a[largest]
+         a[largest]=temp;
+          heapify(a, largest)
+       }
+    }
+    function heapSort(a) {
+       buildHeap(a)
+       for (i = a.length;i>=2;i--){
+          temp=a[i];
+          a[i]=a[1]
+          a[1]=temp;
+          heapsize = heapsize -1
+          heapify(a, 1)
+    }
+  }
+
+
+    function buildHeap(a) {
+       heapsize =a.length
+       for( i = Math.floor( length/2 );i>=1;i--)
+          heapify(a, i)
+    }
+
+    var heapSize=0;
+    console.log(arr)
+    heapSort(arr)
+    console.log(arr)
 
 
 

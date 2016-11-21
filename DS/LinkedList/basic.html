@@ -1,0 +1,109 @@
+<!--Create, Add, Delete from LinkedList (add/delete can be at start, end or in middle).-->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Linked List</h1>
+    <div>1. Add 2. Modify 3. Delete</div>
+    <label>Operation type</label><input type="text" id="oper"/>
+    <label>Value To add</label><input type="text" id="val"/>
+    <label>Location</label><input type="text" id="location"/>
+
+    <input type="button" onclick="submit()" value="Submit"/>
+    <label id="result"></label>
+    <script>
+    function Node(data){
+      var node={}
+      node.data=data;
+      node.next=null;
+      return node;
+    }
+    var LinkedList=function(){
+      this.list={head:null};
+      this.add=function(val){
+      node = Node(val)
+      currentNode=this.list.head;
+      if(!this.list.head){
+         this.list.head=node;
+      }
+      else{
+        while(currentNode.next){
+          currentNode=currentNode.next
+        }
+        currentNode.next=node;
+      }
+
+      return this.list;
+    };
+    this.display=function(){
+      arr=[];
+      currentNode=this.list.head;
+      if(!currentNode){
+        console.log(currentNode)
+          document.getElementById('result').innerHTML=""
+      }
+      else{
+      while(currentNode.next){
+      arr.push(currentNode.data)
+        currentNode=currentNode.next
+      }arr.push(currentNode.data)
+        document.getElementById('result').innerHTML=arr
+        console.log(arr)
+      }
+    };
+    this.delete=function(loc){
+      currentNode=this.list.head;
+      if(!currentNode || (currentNode.data && !currentNode.next)){
+        console.log(currentNode)
+        this.list.head=null
+      }
+      else{
+      while(currentNode.next.next){
+        currentNode=currentNode.next
+      }
+        currentNode.next=null
+      }
+    }
+    this.modify=function(val,loc){
+      count = 0;
+       currentNode=this.list.head;
+      while(currentNode.next){
+        if(count==loc){
+          currentNode.data=val;
+          break;
+        }
+        count++;
+        currentNode=currentNode.next
+      }
+      alert("sorry index out of bound");
+    }
+  }
+    var singlyList= new LinkedList()
+    function submit(){
+      oper= Number(document.getElementById('oper').value);
+      loc= Number(document.getElementById('location').value);
+      val=  Number(document.getElementById('val').value);
+      switch (oper){
+        case 1:
+        singlyList.add(val);
+        singlyList.display()
+        break;
+        case 2:
+        singlyList.modify(val, loc);
+          singlyList.display()
+        break;
+        case 3:
+        singlyList.delete();
+          singlyList.display()
+        break;
+        default:
+        "sorry";
+      }
+
+    }
+
+
+</script>
+</body>
+</html>
