@@ -36,6 +36,10 @@
       color:#fff;
       border-radius: 20px;
     }
+    a{
+      text-decoration: none;
+
+    }
 
     </style>
   </head>
@@ -49,7 +53,9 @@
             ng-style='{"background":value.color}' ></div>
           </div>
           <div ng-show="showSuccess" class="successMessage"><h1 >{{"Yay! You did it! Your score is " +points}}</h1>
-          <button onClick="window.location.reload()">Play Again</button></div>
+          <button onClick="window.location.reload()">Play Again</button>
+          <button> <a href={{"https://twitter.com/intent/tweet?text=I+just+played+Grid+Game+and+my+score+is+"+points}}>Tweet it!</a></button>
+        </div>
         </div>
       </div>
   </body>
