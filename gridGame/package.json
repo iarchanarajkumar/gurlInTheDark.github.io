@@ -1,0 +1,17 @@
+{
+  "name": "grid-game",
+  "version": "1.0.0",
+  "description": "simple js grid game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arch",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.9",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "underscore": "^1.8.3"
+  }
+}

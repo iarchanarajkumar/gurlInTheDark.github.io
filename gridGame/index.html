@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Grid Game</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/underscore/underscore-min.js"></script>
+    <script src="mainModule.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+
+    <style>
+    .cell{
+      padding:20px;
+      border:3px solid #000;
+      height:150px;
+      cursor: pointer;
+    }
+    h1,h3{
+      text-align: center;
+    }
+    .modifyOpacity{
+      opacity: 0.2
+    }
+    .successMessage{
+      position: relative;
+      top:-500px;
+      text-align: center;
+    }
+    button{
+      padding: 20px;
+      font-size: : 2em;
+      border: none;
+      outline: none;
+      background: #000;
+      color:#fff;
+      border-radius: 20px;
+    }
+
+    </style>
+  </head>
+  <body ng-app="gridApp">
+      <div ng-controller="mainCtrl">
+        <h1>GRID GAME</h1>
+        <div class="">
+          <div><h3>{{"Score:"+ points}}</h3></div>
+          <div ng-repeat="value in displayValues" ng-class={'modifyOpacity':showSuccess==true}>
+            <div class="cell col-md-3 "  ng-click= "switchColor(value)"
+            ng-style='{"background":value.color}' ></div>
+          </div>
+          <div ng-show="showSuccess" class="successMessage"><h1 >{{"Yay! You did it! Your score is " +points}}</h1>
+          <button onClick="window.location.reload()">Play Again</button></div>
+        </div>
+      </div>
+  </body>
+</html>
