@@ -1,0 +1,31 @@
+function diffOfSum(arr){
+
+  sum_left=0;
+  sum_right=0;
+  if (arr.length==1){
+    return arr
+  }
+  for(i in arr){
+    sum_left=sum_left+arr[i];
+
+  }
+  console.log(sum_left)
+  min_diff=sum_left;
+  for(i=arr.length-1;i>0;i--){
+    sum_right=sum_right+arr[i]
+    sum_left=sum_left-arr[i];
+    diff=(sum_left-sum_right)
+    console.log(diff,"diff", i)
+    if(diff<min_diff && diff>=0){
+      min_diff=diff
+      val=i;
+    }
+
+  }
+  console.log("it should break at ",val);
+
+}
+
+[3,4,5,6]
+
+[10000, 2,3,4,6,3,5,3,5,3,5,2,,2,3,4,6,5,4,5,6,5,4,2,2,4,4,5,5,5,3,3,4,4,4,4,4]

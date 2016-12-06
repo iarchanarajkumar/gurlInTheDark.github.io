@@ -5,13 +5,14 @@
   </head>
   <body>
     <h1>Linked List</h1>
-    <div>1. Add 2. Modify 3. Delete</div>
+    <div>1. Add 2. Modify 3. Delete 4. reverse</div>
     <label>Operation type</label><input type="text" id="oper"/>
     <label>Value To add</label><input type="text" id="val"/>
     <label>Location</label><input type="text" id="location"/>
 
     <input type="button" onclick="submit()" value="Submit"/>
     <label id="result"></label>
+    <label id="reversed"></label>
     <script>
     function Node(data){
       var node={}
@@ -36,6 +37,11 @@
 
       return this.list;
     };
+    this.reverse=function(){
+      var currentNode, prevNode, nextNode
+      currentNode=this.list.head;
+      
+      }
     this.display=function(){
       arr=[];
       currentNode=this.list.head;
@@ -76,7 +82,7 @@
         count++;
         currentNode=currentNode.next
       }
-      alert("sorry index out of bound");
+
     }
   }
     var singlyList= new LinkedList()
@@ -91,12 +97,15 @@
         break;
         case 2:
         singlyList.modify(val, loc);
-          singlyList.display()
+          singlyList.display('result')
         break;
         case 3:
         singlyList.delete();
-          singlyList.display()
+        singlyList.display('result')
         break;
+        case 4:
+        singlyList.reverse();
+        singlyList.display('reverse')
         default:
         "sorry";
       }
