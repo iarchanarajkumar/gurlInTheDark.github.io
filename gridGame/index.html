@@ -46,7 +46,7 @@
   <body ng-app="gridApp">
       <div ng-controller="mainCtrl">
         <h1>GRID GAME</h1>
-        <div class="">
+        <div class="col-md-offset-3 col-md-6">
           <div><h3>{{"Score:"+ points}}</h3></div>
           <div ng-repeat="value in displayValues" ng-class={'modifyOpacity':showSuccess==true}>
             <div class="cell col-md-3 "  ng-click= "switchColor(value)"
