@@ -10,7 +10,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="app.css" rel="stylesheet" type="text/css">
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 	<h1>PHOTO-STICK</h1>
@@ -29,7 +29,7 @@
 				<img height="30"  width="30" onclick="canvasify('happy')" src="http://rlv.zcache.com/the_original_smiley_face_classic_round_sticker-r8c41697f171a4d97975ffd6ce27b8c3e_v9waf_8byvr_324.jpg" alt="happy" ><br>
 			</div>
 		</div>
-		<div class="col-md-offset-1 col-md-8">
+		<div class="col-md-offset-1 col-md-9">
 			<label>Upload Base Image:</label> <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='baseImgLoader' type='file'>or <input class="form-control input-sm" id="baseImgURLLoader" type="text"> <button class="btn btn-primary" placeholder="Enter file URL" onclick="urlLoadBase()">Load</button>
 		</div>
 		<div class="modal fade" id="myModal" role="dialog">
@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="col-md-offset-1">
-			<canvas height="600" id="canvas" width="800">
+			<canvas height="600" id="canvas" width="850">
 				This text is displayed if your browser does not support HTML5 Canvas.
 			</canvas>
 		</div>
