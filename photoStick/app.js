@@ -9,11 +9,14 @@ var timer;
 var images = []
 var img = new Image();
 var baseImage = new Image();
+var standardImageWidth= 30;
+var standardImageHeight= 30;
+
 var stickerList = [{
-	src: "https://s-media-cache-ak0.pinimg.com/564x/6c/1d/63/6c1d63de581d1d056bf038bb963e0290.jpg",
+	src: "https://s29.postimg.org/6mshj2mef/random.png",
 	title: "embarrassed"
 }, {
-	src: "http://rlv.zcache.com/the_original_smiley_face_classic_round_sticker-r8c41697f171a4d97975ffd6ce27b8c3e_v9waf_8byvr_324.jpg",
+	src: "https://s27.postimg.org/f9h0tds4z/random.png",
 	title: "happy"
 }];
 
@@ -47,16 +50,16 @@ function canvasify(title) {
 			img: img.src,
 			x: x - 15,
 			y: y - 15,
-			width: 30,
-			height: 30
+			width: standardImageWidth,
+			height: standardImageHeight
 		})
 	}
-	x = 30;
-	y = 30;
+	x = 60;
+	y = 60;
 	img.src = _.findWhere(stickerList, {
 		title: title
 	}).src;
-	ctx.drawImage(img, 10, 10, 30, 30);
+	ctx.drawImage(img, 10, 10, standardImageWidth, standardImageHeight);
 	return timer = setInterval(function() {
 		displaythis(img)
 	}, 60)
@@ -77,7 +80,7 @@ function handleBaseImage(e) {
 
 function displaythis(img) {
 	redraw();
-	return ctx.drawImage(img, x - 15, y - 15, 30, 30);
+	return ctx.drawImage(img, x - 15, y - 15, standardImageWidth, standardImageHeight);
 }
 
 function redraw() {
@@ -122,8 +125,8 @@ function submitSticker() {
 	var div = document.createElement("div");
 	div.className = "sticker";
 	var imgStick = document.createElement("img");
-	imgStick.width = 30;
-	imgStick.height = 30;
+	imgStick.width =  standardImageWidth;
+	imgStick.height =  standardImageHeight;
   if(!stickerFileLoader.files.length && !stickerURLLoader.value){
     return
   }
@@ -188,3 +191,4 @@ canvas = document.getElementById("canvas");
 ctx = canvas.getContext("2d");
 canvas.onmousedown = moveDown;
 canvas.onmouseup = moveUp;
+dragula([document.getElementById("stickers"),canvas ]);
