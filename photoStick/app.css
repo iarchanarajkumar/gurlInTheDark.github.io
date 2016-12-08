@@ -24,6 +24,7 @@
 	}
 	#stickers{
    overflow-y: auto;
+	 overflow-x: hidden;
 	 background: #fff;
 	 width:150px;
 	 height:150px;

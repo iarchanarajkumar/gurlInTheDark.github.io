@@ -125,7 +125,7 @@ function submitSticker() {
 	imgStick.width = 30;
 	imgStick.height = 30;
   if(!stickerFileLoader.files.length && !stickerURLLoader.value){
-    return 
+    return
   }
 	if (stickerFileLoader.files.length) {
 		var reader = new FileReader();
@@ -177,8 +177,10 @@ function drop(ev) {
 }
 
 function download() {
-    var dt = canvas.toDataURL('image/jpeg');
-    this.href = dt;
+    var img= new Image();
+    img.crossOrigin="anonymous";
+    img.type = canvas.toDataURL('image/jpeg');
+    this.href = img.type;
 };
 downloadLnk.addEventListener('click', download, false);
 

@@ -19,7 +19,7 @@
 		<button class="btn btn-primary startOver pull-left" onclick="startOver()">Start Over</button>
 		<div class=" col-md-2" id="stickers">
 			<div class="sticker">
-				<button class="btn btn-primary" data-target="#myModal" data-toggle="modal">Add</button>
+				<button class="btn btn-primary" data-target="#myModal" data-toggle="modal">Upload new sticker</button>
 			</div>
 			<div class="sticker">
 				<img height="30" width="30" onclick="canvasify('embarrassed')" src="https://s-media-cache-ak0.pinimg.com/564x/6c/1d/63/6c1d63de581d1d056bf038bb963e0290.jpg" alt="embarrassed" title="embarrassed">
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="col-md-offset-1 col-md-9">
-			<label>Upload Base Image:</label> <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='baseImgLoader' type='file'>or <input class="form-control input-sm" id="baseImgURLLoader" type="text"> <button class="btn btn-primary" placeholder="Enter file URL" onclick="urlLoadBase()">Load</button>
+			<label>Upload Base Image:</label> <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='baseImgLoader' type='file'>or <input class="form-control input-sm" id="baseImgURLLoader" type="text" placeholder="Enter file URL"> <button class="btn btn-primary" onclick="urlLoadBase()">Load</button>
 		</div>
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">
