@@ -24,15 +24,14 @@ canvas {
         display: inline-block;
     }
     #stickers {
-        overflow-y: auto;
-        overflow-x: hidden;
-        background: #fff;
-        height: 400px;
-        color: #000;
-        padding: 0;
-        border: 2px solid #444;
-        box-shadow: 2px 2px 2px #666;
-        padding: 10px;
+			overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    height: 150px;
+    color: #000;
+    border: 2px solid #444;
+    box-shadow: 2px 2px 2px #666;
+    padding: 7px;
     }
     .sticker {
         display: inline-block;
