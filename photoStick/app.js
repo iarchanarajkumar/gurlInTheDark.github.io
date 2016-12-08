@@ -134,8 +134,8 @@ function submitSticker() {
     var div = document.createElement("div");
     div.className = "sticker";
     var imgStick = document.createElement("img");
-    imgStick.width = 100;
-    imgStick.height = 100;
+    imgStick.width = 30;
+    imgStick.height = 30;
     if (!stickerFileLoader.files.length && !stickerURLLoader.value) {
         return
     }
