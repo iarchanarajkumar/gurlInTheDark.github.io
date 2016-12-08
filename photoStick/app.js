@@ -172,7 +172,8 @@ function drop(ev) {
 }
 
 function download() {
-    this.href = canvas.toDataURL('image/jpeg');;
+    var dt = canvas.toDataURL('image/jpeg');
+    this.href = dt;
 };
 downloadLnk.addEventListener('click', download, false);
 
