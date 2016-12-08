@@ -57,18 +57,18 @@ function canvasify(title) {
     if (img.src) {
         images.push({
             img: img.src,
-            x: x - 15,
-            y: y - 15,
-            width: 30,
-            height: 30
+            x: x ,
+            y: y ,
+            width: 100,
+            height: 100
         })
     }
-    x = 30;
-    y = 30;
+    x = 60;
+    y = 60;
     img.src = _.findWhere(stickerList, {
         title: title
     }).src;
-    ctx.drawImage(img, 10, 10, 30, 30);
+    ctx.drawImage(img, 10, 10, 100, 100);
     return timer = setInterval(function() {
         displaythis(img)
     }, 60)
@@ -89,7 +89,7 @@ function handleBaseImage(e) {
 
 function displaythis(img) {
     redraw();
-    return ctx.drawImage(img, x - 15, y - 15, 30, 30);
+    return ctx.drawImage(img, x , y , 100, 100);
 }
 
 function redraw() {
@@ -112,7 +112,7 @@ function myMove(e) {
 }
 
 function moveDown(e) {
-    if (e.offsetX < x + 30 + canvas.offsetLeft && e.offsetX > x - 30 + canvas.offsetLeft && e.offsetY < y + 30 + canvas.offsetTop && e.offsetY > y - 30 + canvas.offsetTop) {
+    if (e.offsetX < x + 50 + canvas.offsetLeft && e.offsetX > x - 50 + canvas.offsetLeft && e.offsetY < y + 50 + canvas.offsetTop && e.offsetY > y - 50 + canvas.offsetTop) {
         x = e.offsetX - canvas.offsetLeft;
         y = e.offsetY - canvas.offsetTop;
         dragme = true;
@@ -134,8 +134,8 @@ function submitSticker() {
     var div = document.createElement("div");
     div.className = "sticker";
     var imgStick = document.createElement("img");
-    imgStick.width = 30;
-    imgStick.height = 30;
+    imgStick.width = 100;
+    imgStick.height = 100;
     if (!stickerFileLoader.files.length && !stickerURLLoader.value) {
         return
     }
