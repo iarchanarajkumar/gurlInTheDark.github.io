@@ -28,16 +28,21 @@ var stickerList = [{
     src: "http://image.flaticon.com/icons/svg/136/136364.svg",
     title: "love"
 }];
-
-
+var iconWidth= 100;
+var iconHeight= 100;
+var stickerWidth= 30;
+var stickerHeight= 30;
+//reset button
 function startOver() {
     baseImage.src = "";
     images = [];
     img.src = "";
 }
+//event listen for base image loading
 var baseImgLoader = document.getElementById('baseImgLoader');
-baseImgLoader.addEventListener('change', handleBaseImage, false);
+baseImgLoader.addEventListener('change', filebasedLoad, false);
 
+//if url based loading
 function urlLoadBase() {
     var strDataURI = document.getElementById('baseImgURLLoader').value
     if (!strDataURI) {
@@ -51,30 +56,8 @@ function urlLoadBase() {
     }
     baseImage.src = img.src;
 }
-
-function canvasify(title) {
-    clearInterval(timer);
-    if (img.src) {
-        images.push({
-            img: img.src,
-            x: x ,
-            y: y ,
-            width: 100,
-            height: 100
-        })
-    }
-    x = 60;
-    y = 60;
-    img.src = _.findWhere(stickerList, {
-        title: title
-    }).src;
-    ctx.drawImage(img, 10, 10, 100, 100);
-    return timer = setInterval(function() {
-        displaythis(img)
-    }, 60)
-}
-
-function handleBaseImage(e) {
+// if file loading
+function filebasedLoad(e) {
     var reader = new FileReader();
     reader.onload = function(event) {
         var img = new Image();
@@ -86,12 +69,42 @@ function handleBaseImage(e) {
     }
     reader.readAsDataURL(e.target.files[0]);
 }
-
-function displaythis(img) {
-    redraw();
-    return ctx.drawImage(img, x , y , 100, 100);
+//reset the x & y positions for next icon
+function resetPositions(){
+	x = 60;
+	y = 60;
 }
 
+// move the sticker to canvas
+function canvasify(title) {
+    clearInterval(timer);
+    if (img.src) {
+        images.push({
+            img: img.src,
+            x: x,
+            y: y,
+            width: iconWidth,
+            height: iconHeight
+        })
+    }
+    resetPositions()
+    img.src = _.findWhere(stickerList, {
+        title: title
+    }).src;
+    ctx.drawImage(img, 10, 10, iconWidth, iconHeight);
+    return timer = setInterval(function() {
+        displayCanvasIcon(img)
+    }, 60)
+}
+
+
+// displays on canvas
+function displayCanvasIcon(img) {
+    redraw();
+    return ctx.drawImage(img, x , y , iconWidth, iconHeight);
+}
+
+// everytime the position of the current icon changes, the others get rerendered at the same location
 function redraw() {
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
     var i = new Image();
@@ -104,7 +117,8 @@ function redraw() {
     }
 }
 
-function myMove(e) {
+// moving the image
+function makeMyMove(e) {
     if (dragme) {
         x = e.offsetX - canvas.offsetLeft;
         y = e.offsetY - canvas.offsetTop;
@@ -116,7 +130,7 @@ function moveDown(e) {
         x = e.offsetX - canvas.offsetLeft;
         y = e.offsetY - canvas.offsetTop;
         dragme = true;
-        canvas.onmousemove = myMove;
+        canvas.onmousemove = makeMyMove;
     }
 }
 
@@ -125,6 +139,7 @@ function moveUp() {
     canvas.onmousemove = null;
 }
 
+// submitting custom stickers
 function submitSticker() {
     var title = document.getElementById("stickerTitle");
     var src;
@@ -134,8 +149,8 @@ function submitSticker() {
     var div = document.createElement("div");
     div.className = "sticker";
     var imgStick = document.createElement("img");
-    imgStick.width = 30;
-    imgStick.height = 30;
+    imgStick.width = stickerWidth;
+    imgStick.height = stickerHeight;
     if (!stickerFileLoader.files.length && !stickerURLLoader.value) {
         return
     }
@@ -188,12 +203,15 @@ function drop(ev) {
     ev.target.appendChild(document.getElementById(data));
 }
 
+// download feature
 function download() {
     var img = new Image();
     img.crossOrigin = "anonymous";
     img.type = canvas.toDataURL('image/jpeg');
     this.href = img.type;
 };
+
+// init
 downloadLnk.addEventListener('click', download, false);
 
 canvas = document.getElementById("canvas");
