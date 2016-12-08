@@ -124,6 +124,9 @@ function submitSticker() {
 	var imgStick = document.createElement("img");
 	imgStick.width = 30;
 	imgStick.height = 30;
+  if(!stickerFileLoader.files.length && !stickerURLLoader.value){
+    return 
+  }
 	if (stickerFileLoader.files.length) {
 		var reader = new FileReader();
 		if (!title.value) {
@@ -135,7 +138,7 @@ function submitSticker() {
 				src: imgStick.src,
 				title: title.value
 			})
-      imgStick.alt=title.value
+
 		}
 		reader.readAsDataURL(stickerFileLoader.files[0]);
 	} else {
@@ -148,10 +151,9 @@ function submitSticker() {
 			title: title.value
 		})
 		imgStick.src = src
-    imgStick.alt=title.value
-
-
 	}
+  imgStick.alt=title.value
+  imgStick.title=title.value;
 	imgStick.addEventListener('click', function() {
 		canvasify(title.value)
 	})
