@@ -1,63 +1,80 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>PHOTO-STICK</title>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-	</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="app.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1>PHOTO-STICK</h1>
-	<div class="container">
-		<a class="btn btn-primary download pull-left" id="downloadLnk" download="YourFileName.jpg">Save</a>
-		<button class="btn btn-primary startOver pull-left" onclick="startOver()">Start Over</button>
-		<div class=" col-md-2" id="stickers">
-			<div class="sticker">
-				<button class="btn btn-primary" data-target="#myModal" data-toggle="modal">Upload new sticker</button>
-			</div>
-			<div class="sticker">
-				<img height="30" width="30" onclick="canvasify('embarrassed')" src="https://s29.postimg.org/6mshj2mef/random.png" alt="embarrassed" title="embarrassed">
-
-			</div>
-			<div class="sticker">
-				<img height="30"  width="30" onclick="canvasify('happy')" src="https://s27.postimg.org/f9h0tds4z/random.png" alt="happy" title="happy" >
-			</div>
-		</div>
-		<div class="col-md-offset-1 col-md-9">
-			<label>Upload Base Image:</label> <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='baseImgLoader' type='file'>or <input class="form-control input-sm" id="baseImgURLLoader" type="text" placeholder="Enter file URL"> <button class="btn btn-primary" onclick="urlLoadBase()">Load</button>
-		</div>
-		<div class="modal fade" id="myModal" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button class="close" data-dismiss="modal" type="button">&times;</button>
-						<h4 class="modal-title">Add new sticker</h4>
-					</div>
-					<div class="modal-body">
-						<input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='stickerFileLoader' type='file'> or <input class="form-control" id="stickerURLLoader" type="text" placeholder="Enter file URL">
-            <input class="form-control" type="text" id="stickerTitle" placeholder="Enter image title"/>
-          </div>
-					<div class="modal-footer">
-						<button class="btn btn-primary" type="button" onclick="submitSticker()" data-dismiss="modal">Add</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-offset-1">
-			<canvas height="600" id="canvas" width="850">
-				This text is displayed if your browser does not support HTML5 Canvas.
-			</canvas>
-		</div>
-	</div>
-	<script charset="utf-8" src="app.js">
-	</script>
+    <h1>Photo-Stick</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <label>Upload Base Image:</label>
+                <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='baseImgLoader' type='file'>or
+                <input class="form-control input-sm" id="baseImgURLLoader" type="text" placeholder="Enter file URL">
+                <button class="btn btn-primary load-btn" onclick="urlLoadBase()">Load</button>
+                <a class="btn btn-primary download pull-right-btn" id="downloadLnk" download="photo-stick-img.jpg">Save</a>
+                <button class="btn btn-primary startOver pull-right-btn" onclick="startOver()">Start Over</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="buttons">
+            </div>
+            <div class="col-md-2" id="stickers">
+                <div class="sticker-btn">
+                    <button class="btn btn-primary" data-target="#myModal" data-toggle="modal">Upload new sticker</button>
+                </div>
+                <div class="sticker">
+                    <img height="30" width="30" onclick="canvasify('embarrassed')" src="http://image.flaticon.com/icons/svg/136/136295.svg" alt="embarrassed" title="embarrassed">
+                </div>
+                <div class="sticker">
+                    <img height="30" width="30" onclick="canvasify('headphone')" src="http://image.flaticon.com/icons/svg/136/136223.svg" alt="headphone" title="headphone">
+                </div>
+                <div class="sticker">
+                    <img height="30" width="30" onclick="canvasify('baby')" src="http://image.flaticon.com/icons/svg/136/136272.svg" alt="baby" title="baby">
+                </div>
+                <div class="sticker">
+                    <img height="30" width="30" onclick="canvasify('angry')" src="http://image.flaticon.com/icons/svg/136/136411.svg" alt="angry" title="angry">
+                </div>
+                <div class="sticker">
+                    <img height="30" width="30" onclick="canvasify('happy')" src="http://image.flaticon.com/icons/svg/136/136215.svg" alt="happy" title="happy">
+                </div>
+                <div class="sticker">
+                    <img height="30" width="30" onclick="canvasify('love')" src="http://image.flaticon.com/icons/svg/136/136364.svg" alt="love" title="love">
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" type="button">&times;</button>
+                            <h4 class="modal-title">Add new sticker</h4>
+                        </div>
+                        <div class="modal-body">
+                            <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='stickerFileLoader' type='file'> or
+                            <input class="form-control" id="stickerURLLoader" type="text" placeholder="Enter file URL">
+                            <input class="form-control" type="text" id="stickerTitle" placeholder="Enter image title" />
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" onclick="submitSticker()" data-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <canvas height="500" id="canvas" width="800">
+                    This text is displayed if your browser does not support HTML5 Canvas.
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <script src="app.js">
+    </script>
 </body>
+
 </html>
