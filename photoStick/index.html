@@ -1,90 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
-<title>PHOTO-STICK</title>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<meta charset="UTF-8">
+	<title>PHOTO-STICK</title>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="app.css" rel="stylesheet" type="text/css">
 
-<style>
-canvas{
-  border:2px solid black;
-}
-body{
-  color: #ffffff;
-  background: url("https://subtlepatterns.com/patterns/footer_lodyas.png");
-  font-family:  sans-serif;
-}
-h1{
-  text-align: center;
-}
-input[type="file"]{
-  display: inline-block;
-}
-.stickers{
-  margin-top: 145px;
-}
-.sticker{
-  padding: 5px;
-  text-align: center;
-  align-items: center;
-  border: 2px solid black;}
-input{
-  color:#000;
-}
-.modal-content{
-  background:  url("https://subtlepatterns.com/patterns/footer_lodyas.png");
-}
-</style>
 </head>
 <body>
-  <h1>PHOTO-STICK </h1>
-<div class="container">
+	<h1>PHOTO-STICK</h1>
+	<div class="container">
+		<a class="btn btn-primary download pull-left" id="downloadLnk" download="YourFileName.jpg">Save</a>
+		<button class="btn btn-primary startOver pull-left" onclick="startOver()">Start Over</button>
+		<div class=" col-md-2" id="stickers">
+			<div class="sticker">
+				<button class="btn btn-primary" data-target="#myModal" data-toggle="modal">Add</button>
+			</div>
+			<div class="sticker">
+				<img height="30" width="30" onclick="canvasify('embarrassed')" src="https://s-media-cache-ak0.pinimg.com/564x/6c/1d/63/6c1d63de581d1d056bf038bb963e0290.jpg" alt="embarrassed"><br>
 
-  <div class="stickers col-md-2">
-    <div class="sticker">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">+New Sticker</button>
-    </div>
-     <div class="sticker"
-     ><img src="https://t5.rbxcdn.com/be3b7bac08409949f31cc3fcbea47c53" width=150 height=150 onclick="canvasify(0)"/><br/>poop
-     </div>
-     <div class="sticker"><img src="http://rlv.zcache.com/the_original_smiley_face_classic_round_sticker-r8c41697f171a4d97975ffd6ce27b8c3e_v9waf_8byvr_324.jpg" width="150", height="150" onclick="canvasify(1)"/><br/>smiley</div>
-  </div>
-  <div class="col-md-8">
-  <label>Upload Base Image: </label>
-  <input class="form-control" type='file' id='base' accept="image/jpeg, image/gif, image/x-png" >or
-  <input type="text" id="baseImgURLLoader" class="form-control input-sm"/>
-  <button onclick="urlLoadBase()" class="btn btn-primary">Load</button>
-</div>
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Add new sticker</h4>
-        </div>
-        <div class="modal-body">
-          <input type='file' id='base'class="form-control" accept="image/jpeg, image/gif, image/x-png" > or <input class="form-control" type="text" id="baseImgURLLoader"/><button onclick="urlLoadBase()" class="btn btn-primary">Load</button>
-            Sticker Title: <input type="text" id="stickerTitle" class="form-control"/>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col-md-offset-2">
-<canvas id="canvas" width="800" height="500" >
-This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
-</div>
-</div>
-<script src="app.js" charset="utf-8"></script>
+			</div>
+			<div class="sticker">
+				<img height="30"  width="30" onclick="canvasify('happy')" src="http://rlv.zcache.com/the_original_smiley_face_classic_round_sticker-r8c41697f171a4d97975ffd6ce27b8c3e_v9waf_8byvr_324.jpg" alt="happy" ><br>
+			</div>
+		</div>
+		<div class="col-md-offset-1 col-md-8">
+			<label>Upload Base Image:</label> <input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='baseImgLoader' type='file'>or <input class="form-control input-sm" id="baseImgURLLoader" type="text"> <button class="btn btn-primary" placeholder="Enter file URL" onclick="urlLoadBase()">Load</button>
+		</div>
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal" type="button">&times;</button>
+						<h4 class="modal-title">Add new sticker</h4>
+					</div>
+					<div class="modal-body">
+						<input accept="image/jpeg, image/gif, image/x-png" class="form-control" id='stickerFileLoader' type='file'> or <input class="form-control" id="stickerURLLoader" type="text" placeholder="Enter file URL">
+            <input class="form-control" type="text" id="stickerTitle" placeholder="Enter image title"/>
+          </div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" type="button" onclick="submitSticker()" data-dismiss="modal">Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-offset-1">
+			<canvas height="600" id="canvas" width="800">
+				This text is displayed if your browser does not support HTML5 Canvas.
+			</canvas>
+		</div>
+	</div>
+	<script charset="utf-8" src="app.js">
+	</script>
 </body>
 </html>

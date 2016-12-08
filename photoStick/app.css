@@ -1,0 +1,50 @@
+	canvas{
+	 border:2px solid #000;
+	 background: #fff;
+	}
+	body{
+	 color: #ffffff;
+	 background: url("https://subtlepatterns.com/patterns/footer_lodyas.png");
+	 font-family:  sans-serif;
+	}
+	h1{
+	 text-align: center;
+	}
+	input[type="file"]{
+	 display: inline-block;
+	}
+	.startOver{
+    margin-top: -38px;
+    margin-left: -145px;
+	}
+	.download{
+		margin-left: -50px;
+		margin-top: -38px;
+	}
+	#stickers{
+   overflow-y: auto;
+	 background: #fff;
+	 width:150px;
+	 height:150px;
+	 color:#000;
+	 padding: 0;
+	 border:2px solid #444;
+	 box-shadow:2px 2px 2px #666;
+	 position: absolute;
+	 left:0;
+
+	}
+	.sticker{
+
+	 display: inline-block;
+	 background: #fff;
+	 text-align: center;
+	 align-items: center;
+	 border: 1px solid black;
+ }
+	input{
+	 color:#000;
+	}
+	.modal-content{
+	 background:  url("https://subtlepatterns.com/patterns/footer_lodyas.png");
+	}
