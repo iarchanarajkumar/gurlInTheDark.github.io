@@ -27,23 +27,22 @@ var baseImgLoader = document.getElementById('baseImgLoader');
 baseImgLoader.addEventListener('change', handleBaseImage, false);
 
 function urlLoadBase() {
-	var strDataURI = document.getElementById('baseImgURLLoader').value
-	img.src = strDataURI;
-	img.onload = function() {
-
-		ctx.drawImage(img, 0, 0);
-	}
-	baseImage.src = img.src;
-  img.src="";
-}
+  var strDataURI= document.getElementById('baseImgURLLoader').value
+   var img = new Image;
+   img.src = strDataURI;
+   img.onload = function(){
+       ctx.drawImage(img,0,0);
+   }
+     baseImage.src=img.src;
+ }
 
 function canvasify(title) {
 	clearInterval(timer);
 	if (img.src) {
 		images.push({
 			img: img.src,
-			x: x - 30,
-			y: y - 30,
+			x: x - 15,
+			y: y - 15,
 			width: 30,
 			height: 30
 		})
