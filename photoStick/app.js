@@ -28,6 +28,10 @@ baseImgLoader.addEventListener('change', handleBaseImage, false);
 
 function urlLoadBase() {
   var strDataURI= document.getElementById('baseImgURLLoader').value
+  if (!strDataURI){
+    alert("the URL loader is empty")
+    return
+  }
    var img = new Image;
    img.src = strDataURI;
    img.onload = function(){
