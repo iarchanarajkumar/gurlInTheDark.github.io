@@ -20,8 +20,9 @@
   </div>
   <ul class="navbar list-inline">
     <li class="navbar-brand"></li>
-    <li class="nav pull-right" id="experience_link" onclick="portfolio.experience()">Quotes</li>
+
     <li class="nav  pull-right" id="contact_link" onclick="portfolio.contactMe()">Contact</li>
+		  <li class="nav pull-right" id="experience_link" onclick="portfolio.experience()">Work</li>
     <li class="nav pull-right" id="skills_link" onclick="portfolio.skillSet()">Skills</li>
 
     <li class="nav pull-right" id="home_link" onclick="portfolio.goHome()">Home</li>
@@ -29,21 +30,29 @@
 	<div class="container">
     <div class="jumbotron" id="home">
       <div>Hi there!</div>
-      <div>I'm Archana Rajkumar, currently working in Dreamworks Animations, India as R&amp;	D UI Engineer.</div>
-      <div> Prior to this, I was employed at CDK global(Formerly ADP Pvt. Ltd), as Member Technical.</div>
+      <div>I'm Archana Rajkumar, currently working at Deloitte Ilabs.</div>
+      <div>I started my career with CDK global(Formerly ADP Pvt. Ltd), as Member Technical. I also worked at  Dreamworks Animations, India as R&amp;	D UI Engineer.</div>
       <div> I have experience developing and owning UI workflows from end to end (Wireframing, Prototyping, Developing, Testing, Maintaining) using JS frameworks including Angular and React</div>
+		  <br/>
+      <blockquote> Every morning in Africa, a Gazelle wakes up, It knows it must run faster than the fastest lion or it will be killed.
+         Every morning a Lion wakes up, It knows it must outrun the slowest Gazelle or it will starve to death. It doesn't matter whether you are a Lion or a Gazelle...
+        when the sun comes up, you'd better be running</blockquote>
+        <div id="horse" class="text-center"></div>
 
     </div>
 
 		<div class="jumbotron" id="work">
-      <h1 class="text-center">Favourite Quotes</h1>
-      <br/>
-      <div> Every morning in Africa, a Gazelle wakes up, It knows it must run faster than the fastest lion or it will be killed.
-         Every morning a Lion wakes up, It knows it must outrun the slowest Gazelle or it will starve to death. It doesn't matter whether you are a Lion or a Gazelle...
-        when the sun comes up, you'd better be running</div>
-        <div id="horse" class="text-center"></div>
+	<div class=" text-center">
+				<div class="mywork"><a href="https://gurlinthedark.github.io/couple"> Couple done using SVG</a></div>
 
+				<div class="mywork"><a href="https://gurlinthedark.github.io/landscape"> Landscape done using SVG</a></div>
+
+				<div class="mywork"><a href="https://gurlinthedark.github.io/photoStick"> Add smileys to images</a></div>
+				<div class="mywork"><a href="https://gurlinthedark.github.io/gridGame"> Simple JS game</a></div>
+				<div class="mywork"><a href="https://github.com/gurlinthedark"> For more..</a></div>
+			</div>
 	</div>
+
 		<div class="jumbotron" id="skills">
 			<div class="skillset text-center">
 				<div class="skills">
@@ -120,19 +129,18 @@
           }
           else if($('#home').is(":visible")){
             portfolio.skillSet()
+
           }
           else if($('#work').is(":visible")){
-            $('.welcome').show();
+						  portfolio.contactMe()
 
-            $('#horse').css('display','none');
-            portfolio.goHome()
 
           }
           else if($('#skills').is(":visible")){
-            portfolio.contactMe()
+          portfolio.experience()
           }
           else{
-          portfolio.experience()
+          portfolio.goHome()
 
           }
           }
