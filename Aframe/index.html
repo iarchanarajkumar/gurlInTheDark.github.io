@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+  <head>
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-assets>
+          <a-asset-item id="skyboxImg" src="01.jpg"></a-asset-item>
+        </a-assets>
+        <a-text value="Archana Rajkumar"
+                position="-1 1 -1" scale="1 1 1">
+        </a-text>
+       <a-sky src="#skyboxImg">
+       </a-sky>
+       <a-camera position="0 2 3 ">
+         <a-cursor color="red"/>
+       </a-camera>
+    </a-scene>
+  </body>
+  <script>
+	 var skybox = document.querySelector('a-sky');
+
+	 var textItem = document.querySelector('a-text');
+
+	 var colors = ['#206BA4','#BBD9EE','  #EBF4FA','#C0C0C0','#E7E4D3','#F1EFE2','#52ADDA','#68B8DF','#DBDBDB','#AACD4B','#C5AE87'];
+	var curcolor = 0;
+	function pickColor(){
+	   var rand = Math.floor(Math.random() * 11);
+	   if (rand == curcolor){
+	       pickColor();
+	   }
+	   else {
+	       curcolor = rand;
+	       return colors[rand];
+	   }
+	}
+
+	 skybox.setAttribute('color', pickColor());
+
+	 textItem.setAttribute('color', pickColor());
+
+	</script>
+
+</html>
