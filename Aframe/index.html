@@ -6,13 +6,18 @@
   <body>
     <a-scene>
         <a-assets>
-          <a-asset-item id="skyboxImg" src="01.jpg"></a-asset-item>
+          <a-asset-item id="skyboxImg" src="met_lf.jpg"></a-asset-item>
+
+            <a-asset-item id="skyboxImg1" src="met_bk.jpg"></a-asset-item>
         </a-assets>
         <a-text value="Archana Rajkumar"
                 position="-1 1 -1" scale="1 1 1">
         </a-text>
        <a-sky src="#skyboxImg">
        </a-sky>
+
+      <a-sky src="#skyboxImg1">
+      </a-sky>
        <a-camera position="0 2 3 ">
          <a-cursor color="red"/>
        </a-camera>

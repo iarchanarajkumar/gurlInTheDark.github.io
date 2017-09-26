@@ -1,0 +1,1528 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'react-vr-cli' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'react-vr-cli', null ]
+7 verbose cache add spec react-vr-cli
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'react-vr-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'react-vr-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed react-vr-cli@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for react-vr-cli
+11 info addNameTag [ 'react-vr-cli', 'latest' ]
+12 silly mapToRegistry name react-vr-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'react-vr-cli',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'react-vr-cli',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/react-vr-cli
+17 verbose addNameTag registry:https://registry.npmjs.org/react-vr-cli not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/react-vr-cli
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 9:39:12 PM
+21 verbose request id 68092bf8fee0b1e5
+22 verbose etag W/"5910b833-4392"
+23 verbose lastModified Mon, 08 May 2017 18:25:55 GMT
+24 http request GET https://registry.npmjs.org/react-vr-cli
+25 http 304 https://registry.npmjs.org/react-vr-cli
+26 verbose headers { date: 'Wed, 10 May 2017 16:09:13 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   etag: 'W/"5910b833-4392"',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-lcy1134-LCY',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1494432554.521583,VS0,VE29',
+26 verbose headers   vary: 'Accept-Encoding' }
+27 silly get cb [ 304,
+27 silly get   { date: 'Wed, 10 May 2017 16:09:13 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     etag: 'W/"5910b833-4392"',
+27 silly get     age: '0',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-lcy1134-LCY',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1494432554.521583,VS0,VE29',
+27 silly get     vary: 'Accept-Encoding' } ]
+28 verbose etag https://registry.npmjs.org/react-vr-cli from cache
+29 verbose get saving react-vr-cli to /Users/archana/.npm/registry.npmjs.org/react-vr-cli/.cache.json
+30 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+31 silly addNameTag next cb for react-vr-cli with tag latest
+32 silly addNamed react-vr-cli@0.3.1
+33 verbose addNamed "0.3.1" is a plain semver version for react-vr-cli
+34 silly cache afterAdd react-vr-cli@0.3.1
+35 verbose afterAdd /Users/archana/.npm/react-vr-cli/0.3.1/package/package.json not in flight; writing
+36 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+37 verbose afterAdd /Users/archana/.npm/react-vr-cli/0.3.1/package/package.json written
+38 silly install resolved [ { name: 'react-vr-cli',
+38 silly install resolved     version: '0.3.1',
+38 silly install resolved     description: 'The React VR CLI for project setup',
+38 silly install resolved     license: 'BSD-3-Clause',
+38 silly install resolved     engines: { node: '>=4' },
+38 silly install resolved     repository:
+38 silly install resolved      { type: 'git',
+38 silly install resolved        url: 'git+https://github.com/facebook/react-vr.git' },
+38 silly install resolved     bugs: { url: 'https://github.com/facebook/react-vr/issues' },
+38 silly install resolved     files:
+38 silly install resolved      [ 'static_assets/',
+38 silly install resolved        'src/',
+38 silly install resolved        'generators/',
+38 silly install resolved        'index.js',
+38 silly install resolved        'LICENSE',
+38 silly install resolved        'PATENTS',
+38 silly install resolved        'package.json',
+38 silly install resolved        'README.md' ],
+38 silly install resolved     bin: { 'react-vr': 'index.js' },
+38 silly install resolved     dependencies: { chalk: '^1.1.3' },
+38 silly install resolved     homepage: 'https://github.com/facebook/react-vr#readme',
+38 silly install resolved     _id: 'react-vr-cli@0.3.1',
+38 silly install resolved     scripts: {},
+38 silly install resolved     _shasum: '71978edcbb502ef3b3a506087be13ff3bdbe02e3',
+38 silly install resolved     _from: 'react-vr-cli@latest',
+38 silly install resolved     _npmVersion: '4.1.2',
+38 silly install resolved     _nodeVersion: '7.5.0',
+38 silly install resolved     _npmUser: { name: 'andrewimm', email: 'andrewi@fb.com' },
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: '71978edcbb502ef3b3a506087be13ff3bdbe02e3',
+38 silly install resolved        tarball: 'https://registry.npmjs.org/react-vr-cli/-/react-vr-cli-0.3.1.tgz' },
+38 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+38 silly install resolved     _npmOperationalInternal:
+38 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+38 silly install resolved        tmp: 'tmp/react-vr-cli-0.3.1.tgz_1494267955079_0.8606512809637934' },
+38 silly install resolved     directories: {},
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/react-vr-cli/-/react-vr-cli-0.3.1.tgz',
+38 silly install resolved     readme: 'ERROR: No README data found!' } ]
+39 info install react-vr-cli@0.3.1 into /usr/local/lib
+40 info installOne react-vr-cli@0.3.1
+41 verbose installOne of react-vr-cli to /usr/local/lib not in flight; installing
+42 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+43 verbose lock using /Users/archana/.npm/_locks/react-vr-cli-2e60bb63133c5fa1.lock for /usr/local/lib/node_modules/react-vr-cli
+44 silly install write writing react-vr-cli 0.3.1 to /usr/local/lib/node_modules/react-vr-cli
+45 verbose unbuild lib/node_modules/react-vr-cli
+46 info preuninstall react-vr-cli@0.3.1
+47 info uninstall react-vr-cli@0.3.1
+48 verbose unbuild rmStuff react-vr-cli@0.3.1 from /usr/local/lib/node_modules
+49 silly gentlyRm /usr/local/bin/react-vr is being gently removed
+50 silly gentlyRm verifying /usr/local is an npm working directory
+51 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+52 silly gentlyRm deletion target /usr/local/bin/react-vr is under /usr/local
+53 verbose gentlyRm vacuuming from /usr/local/bin/react-vr up to /usr/local
+54 silly vacuum-fs removing /usr/local/bin/react-vr
+55 silly vacuum-fs quitting because other entries in /usr/local/bin
+56 info postuninstall react-vr-cli@0.3.1
+57 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli is being purged from base /usr/local
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli
+59 silly vacuum-fs purging /usr/local/lib/node_modules/react-vr-cli
+60 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
+61 verbose tar unpack /Users/archana/.npm/react-vr-cli/0.3.1/package.tgz
+62 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli
+63 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli is being purged
+64 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli
+65 silly gunzTarPerm modes [ '755', '644' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm extractEntry README.md
+68 silly gunzTarPerm extractEntry LICENSE
+69 silly gunzTarPerm extractEntry index.js
+70 silly gunzTarPerm extractEntry PATENTS
+71 silly gunzTarPerm extractEntry generators/babelrc.generator.js
+72 silly gunzTarPerm extractEntry generators/flowconfig.generator.js
+73 silly gunzTarPerm extractEntry generators/gitignore.generator.js
+74 silly gunzTarPerm extractEntry generators/index.vr.generator.js
+75 silly gunzTarPerm extractEntry generators/package.json.generator.js
+76 silly gunzTarPerm extractEntry generators/rn-cli.config.generator.js
+77 silly gunzTarPerm extractEntry generators/__tests__/index.vr.generator.js
+78 silly gunzTarPerm extractEntry generators/vr/client.generator.js
+79 silly gunzTarPerm extractEntry generators/vr/index.html.generator.js
+80 silly gunzTarPerm extractEntry src/copyAssets.js
+81 silly gunzTarPerm extractEntry src/copyFile.js
+82 silly gunzTarPerm extractEntry src/createFile.js
+83 silly gunzTarPerm extractEntry src/ensureDir.js
+84 silly gunzTarPerm extractEntry src/generateFiles.js
+85 silly gunzTarPerm extractEntry src/getLatestVersion.js
+86 silly gunzTarPerm extractEntry src/getPackager.js
+87 silly gunzTarPerm extractEntry src/isDirectory.js
+88 silly gunzTarPerm extractEntry src/listGenerators.js
+89 silly gunzTarPerm extractEntry src/makeModulePath.js
+90 silly gunzTarPerm extractEntry static_assets/chess-world.jpg
+91 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/package.json
+92 info preinstall react-vr-cli@0.3.1
+93 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/package.json
+94 silly prepareForInstallMany adding chalk@^1.1.3 from react-vr-cli dependencies
+95 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/package.json
+96 silly cache add args [ 'chalk@^1.1.3', null ]
+97 verbose cache add spec chalk@^1.1.3
+98 silly cache add parsed spec Result {
+98 silly cache add   raw: 'chalk@^1.1.3',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'chalk',
+98 silly cache add   rawSpec: '^1.1.3',
+98 silly cache add   spec: '>=1.1.3 <2.0.0',
+98 silly cache add   type: 'range' }
+99 silly addNamed chalk@>=1.1.3 <2.0.0
+100 verbose addNamed ">=1.1.3 <2.0.0" is a valid semver range for chalk
+101 silly addNameRange { name: 'chalk', range: '>=1.1.3 <2.0.0', hasData: false }
+102 silly mapToRegistry name chalk
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'chalk',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   name: 'chalk',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npmjs.org/chalk
+107 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+108 verbose request uri https://registry.npmjs.org/chalk
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 9:39:13 PM
+111 verbose etag W/"591009b7-8a0c"
+112 verbose lastModified Mon, 08 May 2017 06:01:27 GMT
+113 http request GET https://registry.npmjs.org/chalk
+114 http 304 https://registry.npmjs.org/chalk
+115 verbose headers { date: 'Wed, 10 May 2017 16:09:13 GMT',
+115 verbose headers   via: '1.1 varnish',
+115 verbose headers   'cache-control': 'max-age=300',
+115 verbose headers   etag: 'W/"591009b7-8a0c"',
+115 verbose headers   age: '175',
+115 verbose headers   connection: 'keep-alive',
+115 verbose headers   'x-served-by': 'cache-lcy1134-LCY',
+115 verbose headers   'x-cache': 'HIT',
+115 verbose headers   'x-cache-hits': '10',
+115 verbose headers   'x-timer': 'S1494432554.955805,VS0,VE0',
+115 verbose headers   vary: 'Accept-Encoding' }
+116 silly get cb [ 304,
+116 silly get   { date: 'Wed, 10 May 2017 16:09:13 GMT',
+116 silly get     via: '1.1 varnish',
+116 silly get     'cache-control': 'max-age=300',
+116 silly get     etag: 'W/"591009b7-8a0c"',
+116 silly get     age: '175',
+116 silly get     connection: 'keep-alive',
+116 silly get     'x-served-by': 'cache-lcy1134-LCY',
+116 silly get     'x-cache': 'HIT',
+116 silly get     'x-cache-hits': '10',
+116 silly get     'x-timer': 'S1494432554.955805,VS0,VE0',
+116 silly get     vary: 'Accept-Encoding' } ]
+117 verbose etag https://registry.npmjs.org/chalk from cache
+118 verbose get saving chalk to /Users/archana/.npm/registry.npmjs.org/chalk/.cache.json
+119 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+120 silly addNameRange number 2 { name: 'chalk', range: '>=1.1.3 <2.0.0', hasData: true }
+121 silly addNameRange versions [ 'chalk',
+121 silly addNameRange   [ '0.1.0',
+121 silly addNameRange     '0.1.1',
+121 silly addNameRange     '0.2.0',
+121 silly addNameRange     '0.2.1',
+121 silly addNameRange     '0.3.0',
+121 silly addNameRange     '0.4.0',
+121 silly addNameRange     '0.5.0',
+121 silly addNameRange     '0.5.1',
+121 silly addNameRange     '1.0.0',
+121 silly addNameRange     '1.1.0',
+121 silly addNameRange     '1.1.1',
+121 silly addNameRange     '1.1.2',
+121 silly addNameRange     '1.1.3' ] ]
+122 silly addNamed chalk@1.1.3
+123 verbose addNamed "1.1.3" is a plain semver version for chalk
+124 silly cache afterAdd chalk@1.1.3
+125 verbose afterAdd /Users/archana/.npm/chalk/1.1.3/package/package.json not in flight; writing
+126 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+127 verbose afterAdd /Users/archana/.npm/chalk/1.1.3/package/package.json written
+128 silly install resolved [ { name: 'chalk',
+128 silly install resolved     version: '1.1.3',
+128 silly install resolved     description: 'Terminal string styling done right. Much color.',
+128 silly install resolved     license: 'MIT',
+128 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/chalk/chalk.git' },
+128 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+128 silly install resolved     engines: { node: '>=0.10.0' },
+128 silly install resolved     scripts:
+128 silly install resolved      { test: 'xo && mocha',
+128 silly install resolved        bench: 'matcha benchmark.js',
+128 silly install resolved        coverage: 'nyc npm test && nyc report',
+128 silly install resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+128 silly install resolved     files: [ 'index.js' ],
+128 silly install resolved     keywords:
+128 silly install resolved      [ 'color',
+128 silly install resolved        'colour',
+128 silly install resolved        'colors',
+128 silly install resolved        'terminal',
+128 silly install resolved        'console',
+128 silly install resolved        'cli',
+128 silly install resolved        'string',
+128 silly install resolved        'str',
+128 silly install resolved        'ansi',
+128 silly install resolved        'style',
+128 silly install resolved        'styles',
+128 silly install resolved        'tty',
+128 silly install resolved        'formatting',
+128 silly install resolved        'rgb',
+128 silly install resolved        '256',
+128 silly install resolved        'shell',
+128 silly install resolved        'xterm',
+128 silly install resolved        'log',
+128 silly install resolved        'logging',
+128 silly install resolved        'command-line',
+128 silly install resolved        'text' ],
+128 silly install resolved     dependencies:
+128 silly install resolved      { 'ansi-styles': '^2.2.1',
+128 silly install resolved        'escape-string-regexp': '^1.0.2',
+128 silly install resolved        'has-ansi': '^2.0.0',
+128 silly install resolved        'strip-ansi': '^3.0.0',
+128 silly install resolved        'supports-color': '^2.0.0' },
+128 silly install resolved     devDependencies:
+128 silly install resolved      { coveralls: '^2.11.2',
+128 silly install resolved        matcha: '^0.6.0',
+128 silly install resolved        mocha: '*',
+128 silly install resolved        nyc: '^3.0.0',
+128 silly install resolved        'require-uncached': '^1.0.2',
+128 silly install resolved        'resolve-from': '^1.0.0',
+128 silly install resolved        semver: '^4.3.3',
+128 silly install resolved        xo: '*' },
+128 silly install resolved     xo: { envs: [Object] },
+128 silly install resolved     gitHead: '0d8d8c204eb87a4038219131ad4d8369c9f59d24',
+128 silly install resolved     bugs: { url: 'https://github.com/chalk/chalk/issues' },
+128 silly install resolved     homepage: 'https://github.com/chalk/chalk#readme',
+128 silly install resolved     _id: 'chalk@1.1.3',
+128 silly install resolved     _shasum: 'a8115c55e4a702fe4d150abd3872822a7e09fc98',
+128 silly install resolved     _from: 'chalk@>=1.1.3 <2.0.0',
+128 silly install resolved     _npmVersion: '2.14.2',
+128 silly install resolved     _nodeVersion: '0.10.32',
+128 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+128 silly install resolved     dist:
+128 silly install resolved      { shasum: 'a8115c55e4a702fe4d150abd3872822a7e09fc98',
+128 silly install resolved        tarball: 'https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz' },
+128 silly install resolved     _npmOperationalInternal:
+128 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+128 silly install resolved        tmp: 'tmp/chalk-1.1.3.tgz_1459210604109_0.3892582862172276' },
+128 silly install resolved     directories: {},
+128 silly install resolved     _resolved: 'https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz',
+128 silly install resolved     readme: 'ERROR: No README data found!' } ]
+129 info install chalk@1.1.3 into /usr/local/lib/node_modules/react-vr-cli
+130 info installOne chalk@1.1.3
+131 verbose installOne of chalk to /usr/local/lib/node_modules/react-vr-cli not in flight; installing
+132 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+133 verbose lock using /Users/archana/.npm/_locks/chalk-c74b265dd8221cdd.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+134 silly install write writing chalk 1.1.3 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+135 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk
+136 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk is being purged from base /usr/local
+137 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+138 verbose tar unpack /Users/archana/.npm/chalk/1.1.3/package.tgz
+139 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+140 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk is being purged
+141 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+142 silly gunzTarPerm modes [ '755', '644' ]
+143 silly gunzTarPerm extractEntry package.json
+144 silly gunzTarPerm extractEntry index.js
+145 silly gunzTarPerm extractEntry license
+146 silly gunzTarPerm extractEntry readme.md
+147 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/package.json
+148 info preinstall chalk@1.1.3
+149 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/package.json
+150 silly prepareForInstallMany adding ansi-styles@^2.2.1 from chalk dependencies
+151 silly prepareForInstallMany adding escape-string-regexp@^1.0.2 from chalk dependencies
+152 silly prepareForInstallMany adding has-ansi@^2.0.0 from chalk dependencies
+153 silly prepareForInstallMany adding strip-ansi@^3.0.0 from chalk dependencies
+154 silly prepareForInstallMany adding supports-color@^2.0.0 from chalk dependencies
+155 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/package.json
+156 silly cache add args [ 'ansi-styles@^2.2.1', null ]
+157 verbose cache add spec ansi-styles@^2.2.1
+158 silly cache add args [ 'escape-string-regexp@^1.0.2', null ]
+159 verbose cache add spec escape-string-regexp@^1.0.2
+160 silly cache add parsed spec Result {
+160 silly cache add   raw: 'ansi-styles@^2.2.1',
+160 silly cache add   scope: null,
+160 silly cache add   name: 'ansi-styles',
+160 silly cache add   rawSpec: '^2.2.1',
+160 silly cache add   spec: '>=2.2.1 <3.0.0',
+160 silly cache add   type: 'range' }
+161 silly addNamed ansi-styles@>=2.2.1 <3.0.0
+162 verbose addNamed ">=2.2.1 <3.0.0" is a valid semver range for ansi-styles
+163 silly addNameRange { name: 'ansi-styles', range: '>=2.2.1 <3.0.0', hasData: false }
+164 silly mapToRegistry name ansi-styles
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry data Result {
+167 silly mapToRegistry   raw: 'ansi-styles',
+167 silly mapToRegistry   scope: null,
+167 silly mapToRegistry   name: 'ansi-styles',
+167 silly mapToRegistry   rawSpec: '',
+167 silly mapToRegistry   spec: 'latest',
+167 silly mapToRegistry   type: 'tag' }
+168 silly mapToRegistry uri https://registry.npmjs.org/ansi-styles
+169 verbose addNameRange registry:https://registry.npmjs.org/ansi-styles not in flight; fetching
+170 silly cache add parsed spec Result {
+170 silly cache add   raw: 'escape-string-regexp@^1.0.2',
+170 silly cache add   scope: null,
+170 silly cache add   name: 'escape-string-regexp',
+170 silly cache add   rawSpec: '^1.0.2',
+170 silly cache add   spec: '>=1.0.2 <2.0.0',
+170 silly cache add   type: 'range' }
+171 silly addNamed escape-string-regexp@>=1.0.2 <2.0.0
+172 verbose addNamed ">=1.0.2 <2.0.0" is a valid semver range for escape-string-regexp
+173 silly addNameRange { name: 'escape-string-regexp',
+173 silly addNameRange   range: '>=1.0.2 <2.0.0',
+173 silly addNameRange   hasData: false }
+174 silly mapToRegistry name escape-string-regexp
+175 silly mapToRegistry using default registry
+176 silly mapToRegistry registry https://registry.npmjs.org/
+177 silly mapToRegistry data Result {
+177 silly mapToRegistry   raw: 'escape-string-regexp',
+177 silly mapToRegistry   scope: null,
+177 silly mapToRegistry   name: 'escape-string-regexp',
+177 silly mapToRegistry   rawSpec: '',
+177 silly mapToRegistry   spec: 'latest',
+177 silly mapToRegistry   type: 'tag' }
+178 silly mapToRegistry uri https://registry.npmjs.org/escape-string-regexp
+179 verbose addNameRange registry:https://registry.npmjs.org/escape-string-regexp not in flight; fetching
+180 silly cache add args [ 'has-ansi@^2.0.0', null ]
+181 verbose cache add spec has-ansi@^2.0.0
+182 silly cache add parsed spec Result {
+182 silly cache add   raw: 'has-ansi@^2.0.0',
+182 silly cache add   scope: null,
+182 silly cache add   name: 'has-ansi',
+182 silly cache add   rawSpec: '^2.0.0',
+182 silly cache add   spec: '>=2.0.0 <3.0.0',
+182 silly cache add   type: 'range' }
+183 silly addNamed has-ansi@>=2.0.0 <3.0.0
+184 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for has-ansi
+185 silly addNameRange { name: 'has-ansi', range: '>=2.0.0 <3.0.0', hasData: false }
+186 silly mapToRegistry name has-ansi
+187 silly mapToRegistry using default registry
+188 silly mapToRegistry registry https://registry.npmjs.org/
+189 silly mapToRegistry data Result {
+189 silly mapToRegistry   raw: 'has-ansi',
+189 silly mapToRegistry   scope: null,
+189 silly mapToRegistry   name: 'has-ansi',
+189 silly mapToRegistry   rawSpec: '',
+189 silly mapToRegistry   spec: 'latest',
+189 silly mapToRegistry   type: 'tag' }
+190 silly mapToRegistry uri https://registry.npmjs.org/has-ansi
+191 verbose addNameRange registry:https://registry.npmjs.org/has-ansi not in flight; fetching
+192 silly cache add args [ 'strip-ansi@^3.0.0', null ]
+193 verbose cache add spec strip-ansi@^3.0.0
+194 silly cache add parsed spec Result {
+194 silly cache add   raw: 'strip-ansi@^3.0.0',
+194 silly cache add   scope: null,
+194 silly cache add   name: 'strip-ansi',
+194 silly cache add   rawSpec: '^3.0.0',
+194 silly cache add   spec: '>=3.0.0 <4.0.0',
+194 silly cache add   type: 'range' }
+195 silly addNamed strip-ansi@>=3.0.0 <4.0.0
+196 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for strip-ansi
+197 silly addNameRange { name: 'strip-ansi', range: '>=3.0.0 <4.0.0', hasData: false }
+198 silly mapToRegistry name strip-ansi
+199 silly mapToRegistry using default registry
+200 silly mapToRegistry registry https://registry.npmjs.org/
+201 silly mapToRegistry data Result {
+201 silly mapToRegistry   raw: 'strip-ansi',
+201 silly mapToRegistry   scope: null,
+201 silly mapToRegistry   name: 'strip-ansi',
+201 silly mapToRegistry   rawSpec: '',
+201 silly mapToRegistry   spec: 'latest',
+201 silly mapToRegistry   type: 'tag' }
+202 silly mapToRegistry uri https://registry.npmjs.org/strip-ansi
+203 verbose addNameRange registry:https://registry.npmjs.org/strip-ansi not in flight; fetching
+204 silly cache add args [ 'supports-color@^2.0.0', null ]
+205 verbose cache add spec supports-color@^2.0.0
+206 silly cache add parsed spec Result {
+206 silly cache add   raw: 'supports-color@^2.0.0',
+206 silly cache add   scope: null,
+206 silly cache add   name: 'supports-color',
+206 silly cache add   rawSpec: '^2.0.0',
+206 silly cache add   spec: '>=2.0.0 <3.0.0',
+206 silly cache add   type: 'range' }
+207 silly addNamed supports-color@>=2.0.0 <3.0.0
+208 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for supports-color
+209 silly addNameRange { name: 'supports-color',
+209 silly addNameRange   range: '>=2.0.0 <3.0.0',
+209 silly addNameRange   hasData: false }
+210 silly mapToRegistry name supports-color
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry data Result {
+213 silly mapToRegistry   raw: 'supports-color',
+213 silly mapToRegistry   scope: null,
+213 silly mapToRegistry   name: 'supports-color',
+213 silly mapToRegistry   rawSpec: '',
+213 silly mapToRegistry   spec: 'latest',
+213 silly mapToRegistry   type: 'tag' }
+214 silly mapToRegistry uri https://registry.npmjs.org/supports-color
+215 verbose addNameRange registry:https://registry.npmjs.org/supports-color not in flight; fetching
+216 verbose request uri https://registry.npmjs.org/ansi-styles
+217 verbose request no auth needed
+218 info attempt registry request try #1 at 9:39:13 PM
+219 verbose etag W/"58d490a1-4618"
+220 verbose lastModified Fri, 24 Mar 2017 03:21:05 GMT
+221 http request GET https://registry.npmjs.org/ansi-styles
+222 verbose request uri https://registry.npmjs.org/escape-string-regexp
+223 verbose request no auth needed
+224 info attempt registry request try #1 at 9:39:13 PM
+225 verbose etag W/"5901eb51-2440"
+226 verbose lastModified Thu, 27 Apr 2017 13:00:01 GMT
+227 http request GET https://registry.npmjs.org/escape-string-regexp
+228 verbose request uri https://registry.npmjs.org/has-ansi
+229 verbose request no auth needed
+230 info attempt registry request try #1 at 9:39:13 PM
+231 verbose etag W/"58f288ae-277a"
+232 verbose lastModified Sat, 15 Apr 2017 20:55:10 GMT
+233 http request GET https://registry.npmjs.org/has-ansi
+234 verbose request uri https://registry.npmjs.org/strip-ansi
+235 verbose request no auth needed
+236 info attempt registry request try #1 at 9:39:13 PM
+237 verbose etag W/"58f89af4-3e57"
+238 verbose lastModified Thu, 20 Apr 2017 11:26:44 GMT
+239 http request GET https://registry.npmjs.org/strip-ansi
+240 verbose request uri https://registry.npmjs.org/supports-color
+241 verbose request no auth needed
+242 info attempt registry request try #1 at 9:39:13 PM
+243 verbose etag W/"58d490a2-68fc"
+244 verbose lastModified Fri, 24 Mar 2017 03:21:06 GMT
+245 http request GET https://registry.npmjs.org/supports-color
+246 http 304 https://registry.npmjs.org/ansi-styles
+247 verbose headers { date: 'Wed, 10 May 2017 16:09:14 GMT',
+247 verbose headers   via: '1.1 varnish',
+247 verbose headers   'cache-control': 'max-age=300',
+247 verbose headers   etag: 'W/"58d490a1-4618"',
+247 verbose headers   age: '30',
+247 verbose headers   connection: 'keep-alive',
+247 verbose headers   'x-served-by': 'cache-lcy1134-LCY',
+247 verbose headers   'x-cache': 'HIT',
+247 verbose headers   'x-cache-hits': '2',
+247 verbose headers   'x-timer': 'S1494432554.156890,VS0,VE0',
+247 verbose headers   vary: 'Accept-Encoding' }
+248 silly get cb [ 304,
+248 silly get   { date: 'Wed, 10 May 2017 16:09:14 GMT',
+248 silly get     via: '1.1 varnish',
+248 silly get     'cache-control': 'max-age=300',
+248 silly get     etag: 'W/"58d490a1-4618"',
+248 silly get     age: '30',
+248 silly get     connection: 'keep-alive',
+248 silly get     'x-served-by': 'cache-lcy1134-LCY',
+248 silly get     'x-cache': 'HIT',
+248 silly get     'x-cache-hits': '2',
+248 silly get     'x-timer': 'S1494432554.156890,VS0,VE0',
+248 silly get     vary: 'Accept-Encoding' } ]
+249 verbose etag https://registry.npmjs.org/ansi-styles from cache
+250 verbose get saving ansi-styles to /Users/archana/.npm/registry.npmjs.org/ansi-styles/.cache.json
+251 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+252 silly addNameRange number 2 { name: 'ansi-styles', range: '>=2.2.1 <3.0.0', hasData: true }
+253 silly addNameRange versions [ 'ansi-styles',
+253 silly addNameRange   [ '0.1.0',
+253 silly addNameRange     '0.1.1',
+253 silly addNameRange     '0.1.2',
+253 silly addNameRange     '0.2.0',
+253 silly addNameRange     '1.0.0',
+253 silly addNameRange     '1.1.0',
+253 silly addNameRange     '2.0.0',
+253 silly addNameRange     '2.0.1',
+253 silly addNameRange     '2.1.0',
+253 silly addNameRange     '2.2.1',
+253 silly addNameRange     '3.0.0' ] ]
+254 silly addNamed ansi-styles@2.2.1
+255 verbose addNamed "2.2.1" is a plain semver version for ansi-styles
+256 silly cache afterAdd ansi-styles@2.2.1
+257 verbose afterAdd /Users/archana/.npm/ansi-styles/2.2.1/package/package.json not in flight; writing
+258 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+259 verbose afterAdd /Users/archana/.npm/ansi-styles/2.2.1/package/package.json written
+260 http 304 https://registry.npmjs.org/supports-color
+261 verbose headers { date: 'Wed, 10 May 2017 16:09:14 GMT',
+261 verbose headers   via: '1.1 varnish',
+261 verbose headers   'cache-control': 'max-age=300',
+261 verbose headers   etag: 'W/"58d490a2-68fc"',
+261 verbose headers   age: '222',
+261 verbose headers   connection: 'keep-alive',
+261 verbose headers   'x-served-by': 'cache-lcy1135-LCY',
+261 verbose headers   'x-cache': 'HIT',
+261 verbose headers   'x-cache-hits': '13',
+261 verbose headers   'x-timer': 'S1494432554.450849,VS0,VE0',
+261 verbose headers   vary: 'Accept-Encoding' }
+262 silly get cb [ 304,
+262 silly get   { date: 'Wed, 10 May 2017 16:09:14 GMT',
+262 silly get     via: '1.1 varnish',
+262 silly get     'cache-control': 'max-age=300',
+262 silly get     etag: 'W/"58d490a2-68fc"',
+262 silly get     age: '222',
+262 silly get     connection: 'keep-alive',
+262 silly get     'x-served-by': 'cache-lcy1135-LCY',
+262 silly get     'x-cache': 'HIT',
+262 silly get     'x-cache-hits': '13',
+262 silly get     'x-timer': 'S1494432554.450849,VS0,VE0',
+262 silly get     vary: 'Accept-Encoding' } ]
+263 verbose etag https://registry.npmjs.org/supports-color from cache
+264 verbose get saving supports-color to /Users/archana/.npm/registry.npmjs.org/supports-color/.cache.json
+265 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+266 http 304 https://registry.npmjs.org/escape-string-regexp
+267 verbose headers { date: 'Wed, 10 May 2017 16:09:14 GMT',
+267 verbose headers   via: '1.1 varnish',
+267 verbose headers   'cache-control': 'max-age=300',
+267 verbose headers   etag: 'W/"5901eb51-2440"',
+267 verbose headers   age: '295',
+267 verbose headers   connection: 'keep-alive',
+267 verbose headers   'x-served-by': 'cache-lcy1121-LCY',
+267 verbose headers   'x-cache': 'HIT',
+267 verbose headers   'x-cache-hits': '11',
+267 verbose headers   'x-timer': 'S1494432554.451941,VS0,VE0',
+267 verbose headers   vary: 'Accept-Encoding' }
+268 silly get cb [ 304,
+268 silly get   { date: 'Wed, 10 May 2017 16:09:14 GMT',
+268 silly get     via: '1.1 varnish',
+268 silly get     'cache-control': 'max-age=300',
+268 silly get     etag: 'W/"5901eb51-2440"',
+268 silly get     age: '295',
+268 silly get     connection: 'keep-alive',
+268 silly get     'x-served-by': 'cache-lcy1121-LCY',
+268 silly get     'x-cache': 'HIT',
+268 silly get     'x-cache-hits': '11',
+268 silly get     'x-timer': 'S1494432554.451941,VS0,VE0',
+268 silly get     vary: 'Accept-Encoding' } ]
+269 verbose etag https://registry.npmjs.org/escape-string-regexp from cache
+270 verbose get saving escape-string-regexp to /Users/archana/.npm/registry.npmjs.org/escape-string-regexp/.cache.json
+271 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+272 silly addNameRange number 2 { name: 'supports-color',
+272 silly addNameRange   range: '>=2.0.0 <3.0.0',
+272 silly addNameRange   hasData: true }
+273 silly addNameRange versions [ 'supports-color',
+273 silly addNameRange   [ '0.2.0',
+273 silly addNameRange     '1.0.0',
+273 silly addNameRange     '1.1.0',
+273 silly addNameRange     '1.2.0',
+273 silly addNameRange     '1.2.1',
+273 silly addNameRange     '1.3.0',
+273 silly addNameRange     '1.3.1',
+273 silly addNameRange     '2.0.0',
+273 silly addNameRange     '3.0.0',
+273 silly addNameRange     '3.0.1',
+273 silly addNameRange     '3.1.0',
+273 silly addNameRange     '3.1.1',
+273 silly addNameRange     '3.1.2',
+273 silly addNameRange     '3.2.0',
+273 silly addNameRange     '3.2.1',
+273 silly addNameRange     '3.2.2',
+273 silly addNameRange     '3.2.3' ] ]
+274 silly addNamed supports-color@2.0.0
+275 verbose addNamed "2.0.0" is a plain semver version for supports-color
+276 silly cache afterAdd supports-color@2.0.0
+277 verbose afterAdd /Users/archana/.npm/supports-color/2.0.0/package/package.json not in flight; writing
+278 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+279 silly addNameRange number 2 { name: 'escape-string-regexp',
+279 silly addNameRange   range: '>=1.0.2 <2.0.0',
+279 silly addNameRange   hasData: true }
+280 silly addNameRange versions [ 'escape-string-regexp',
+280 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+281 silly addNamed escape-string-regexp@1.0.5
+282 verbose addNamed "1.0.5" is a plain semver version for escape-string-regexp
+283 verbose afterAdd /Users/archana/.npm/supports-color/2.0.0/package/package.json written
+284 silly cache afterAdd escape-string-regexp@1.0.5
+285 verbose afterAdd /Users/archana/.npm/escape-string-regexp/1.0.5/package/package.json not in flight; writing
+286 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+287 verbose afterAdd /Users/archana/.npm/escape-string-regexp/1.0.5/package/package.json written
+288 http 304 https://registry.npmjs.org/strip-ansi
+289 verbose headers { date: 'Wed, 10 May 2017 16:09:14 GMT',
+289 verbose headers   via: '1.1 varnish',
+289 verbose headers   'cache-control': 'max-age=300',
+289 verbose headers   etag: 'W/"58f89af4-3e57"',
+289 verbose headers   age: '199',
+289 verbose headers   connection: 'keep-alive',
+289 verbose headers   'x-served-by': 'cache-lcy1138-LCY',
+289 verbose headers   'x-cache': 'HIT',
+289 verbose headers   'x-cache-hits': '9',
+289 verbose headers   'x-timer': 'S1494432554.467716,VS0,VE0',
+289 verbose headers   vary: 'Accept-Encoding' }
+290 silly get cb [ 304,
+290 silly get   { date: 'Wed, 10 May 2017 16:09:14 GMT',
+290 silly get     via: '1.1 varnish',
+290 silly get     'cache-control': 'max-age=300',
+290 silly get     etag: 'W/"58f89af4-3e57"',
+290 silly get     age: '199',
+290 silly get     connection: 'keep-alive',
+290 silly get     'x-served-by': 'cache-lcy1138-LCY',
+290 silly get     'x-cache': 'HIT',
+290 silly get     'x-cache-hits': '9',
+290 silly get     'x-timer': 'S1494432554.467716,VS0,VE0',
+290 silly get     vary: 'Accept-Encoding' } ]
+291 verbose etag https://registry.npmjs.org/strip-ansi from cache
+292 verbose get saving strip-ansi to /Users/archana/.npm/registry.npmjs.org/strip-ansi/.cache.json
+293 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+294 http 304 https://registry.npmjs.org/has-ansi
+295 verbose headers { date: 'Wed, 10 May 2017 16:09:14 GMT',
+295 verbose headers   via: '1.1 varnish',
+295 verbose headers   'cache-control': 'max-age=300',
+295 verbose headers   etag: 'W/"58f288ae-277a"',
+295 verbose headers   age: '20',
+295 verbose headers   connection: 'keep-alive',
+295 verbose headers   'x-served-by': 'cache-lcy1139-LCY',
+295 verbose headers   'x-cache': 'HIT',
+295 verbose headers   'x-cache-hits': '1',
+295 verbose headers   'x-timer': 'S1494432554.468328,VS0,VE0',
+295 verbose headers   vary: 'Accept-Encoding' }
+296 silly get cb [ 304,
+296 silly get   { date: 'Wed, 10 May 2017 16:09:14 GMT',
+296 silly get     via: '1.1 varnish',
+296 silly get     'cache-control': 'max-age=300',
+296 silly get     etag: 'W/"58f288ae-277a"',
+296 silly get     age: '20',
+296 silly get     connection: 'keep-alive',
+296 silly get     'x-served-by': 'cache-lcy1139-LCY',
+296 silly get     'x-cache': 'HIT',
+296 silly get     'x-cache-hits': '1',
+296 silly get     'x-timer': 'S1494432554.468328,VS0,VE0',
+296 silly get     vary: 'Accept-Encoding' } ]
+297 verbose etag https://registry.npmjs.org/has-ansi from cache
+298 verbose get saving has-ansi to /Users/archana/.npm/registry.npmjs.org/has-ansi/.cache.json
+299 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+300 silly addNameRange number 2 { name: 'strip-ansi', range: '>=3.0.0 <4.0.0', hasData: true }
+301 silly addNameRange versions [ 'strip-ansi',
+301 silly addNameRange   [ '0.1.0',
+301 silly addNameRange     '0.1.1',
+301 silly addNameRange     '0.2.0',
+301 silly addNameRange     '0.2.1',
+301 silly addNameRange     '0.2.2',
+301 silly addNameRange     '0.3.0',
+301 silly addNameRange     '1.0.0',
+301 silly addNameRange     '2.0.0',
+301 silly addNameRange     '2.0.1',
+301 silly addNameRange     '3.0.0',
+301 silly addNameRange     '3.0.1' ] ]
+302 silly addNamed strip-ansi@3.0.1
+303 verbose addNamed "3.0.1" is a plain semver version for strip-ansi
+304 silly addNameRange number 2 { name: 'has-ansi', range: '>=2.0.0 <3.0.0', hasData: true }
+305 silly addNameRange versions [ 'has-ansi',
+305 silly addNameRange   [ '0.1.0', '1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0' ] ]
+306 silly addNamed has-ansi@2.0.0
+307 verbose addNamed "2.0.0" is a plain semver version for has-ansi
+308 silly cache afterAdd strip-ansi@3.0.1
+309 verbose afterAdd /Users/archana/.npm/strip-ansi/3.0.1/package/package.json not in flight; writing
+310 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+311 silly cache afterAdd has-ansi@2.0.0
+312 verbose afterAdd /Users/archana/.npm/has-ansi/2.0.0/package/package.json not in flight; writing
+313 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+314 verbose afterAdd /Users/archana/.npm/strip-ansi/3.0.1/package/package.json written
+315 verbose afterAdd /Users/archana/.npm/has-ansi/2.0.0/package/package.json written
+316 silly install resolved [ { name: 'ansi-styles',
+316 silly install resolved     version: '2.2.1',
+316 silly install resolved     description: 'ANSI escape codes for styling strings in the terminal',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/chalk/ansi-styles.git' },
+316 silly install resolved     author:
+316 silly install resolved      { name: 'Sindre Sorhus',
+316 silly install resolved        email: 'sindresorhus@gmail.com',
+316 silly install resolved        url: 'sindresorhus.com' },
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     engines: { node: '>=0.10.0' },
+316 silly install resolved     scripts: { test: 'mocha' },
+316 silly install resolved     files: [ 'index.js' ],
+316 silly install resolved     keywords:
+316 silly install resolved      [ 'ansi',
+316 silly install resolved        'styles',
+316 silly install resolved        'color',
+316 silly install resolved        'colour',
+316 silly install resolved        'colors',
+316 silly install resolved        'terminal',
+316 silly install resolved        'console',
+316 silly install resolved        'cli',
+316 silly install resolved        'string',
+316 silly install resolved        'tty',
+316 silly install resolved        'escape',
+316 silly install resolved        'formatting',
+316 silly install resolved        'rgb',
+316 silly install resolved        '256',
+316 silly install resolved        'shell',
+316 silly install resolved        'xterm',
+316 silly install resolved        'log',
+316 silly install resolved        'logging',
+316 silly install resolved        'command-line',
+316 silly install resolved        'text' ],
+316 silly install resolved     devDependencies: { mocha: '*' },
+316 silly install resolved     gitHead: '95c59b23be760108b6530ca1c89477c21b258032',
+316 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-styles/issues' },
+316 silly install resolved     homepage: 'https://github.com/chalk/ansi-styles#readme',
+316 silly install resolved     _id: 'ansi-styles@2.2.1',
+316 silly install resolved     _shasum: 'b432dd3358b634cf75e1e4664368240533c1ddbe',
+316 silly install resolved     _from: 'ansi-styles@>=2.2.1 <3.0.0',
+316 silly install resolved     _npmVersion: '3.8.3',
+316 silly install resolved     _nodeVersion: '4.3.0',
+316 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+316 silly install resolved     dist:
+316 silly install resolved      { shasum: 'b432dd3358b634cf75e1e4664368240533c1ddbe',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz' },
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+316 silly install resolved        tmp: 'tmp/ansi-styles-2.2.1.tgz_1459197317833_0.9694824463222176' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz',
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: 'supports-color',
+316 silly install resolved     version: '2.0.0',
+316 silly install resolved     description: 'Detect whether a terminal supports color',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/chalk/supports-color.git' },
+316 silly install resolved     author:
+316 silly install resolved      { name: 'Sindre Sorhus',
+316 silly install resolved        email: 'sindresorhus@gmail.com',
+316 silly install resolved        url: 'sindresorhus.com' },
+316 silly install resolved     maintainers: [ [Object], [Object] ],
+316 silly install resolved     engines: { node: '>=0.8.0' },
+316 silly install resolved     scripts: { test: 'mocha' },
+316 silly install resolved     files: [ 'index.js' ],
+316 silly install resolved     keywords:
+316 silly install resolved      [ 'color',
+316 silly install resolved        'colour',
+316 silly install resolved        'colors',
+316 silly install resolved        'terminal',
+316 silly install resolved        'console',
+316 silly install resolved        'cli',
+316 silly install resolved        'ansi',
+316 silly install resolved        'styles',
+316 silly install resolved        'tty',
+316 silly install resolved        'rgb',
+316 silly install resolved        '256',
+316 silly install resolved        'shell',
+316 silly install resolved        'xterm',
+316 silly install resolved        'command-line',
+316 silly install resolved        'support',
+316 silly install resolved        'supports',
+316 silly install resolved        'capability',
+316 silly install resolved        'detect' ],
+316 silly install resolved     devDependencies: { mocha: '*', 'require-uncached': '^1.0.2' },
+316 silly install resolved     gitHead: '8400d98ade32b2adffd50902c06d9e725a5c6588',
+316 silly install resolved     bugs: { url: 'https://github.com/chalk/supports-color/issues' },
+316 silly install resolved     homepage: 'https://github.com/chalk/supports-color',
+316 silly install resolved     _id: 'supports-color@2.0.0',
+316 silly install resolved     _shasum: '535d045ce6b6363fa40117084629995e9df324c7',
+316 silly install resolved     _from: 'supports-color@>=2.0.0 <3.0.0',
+316 silly install resolved     _npmVersion: '2.11.2',
+316 silly install resolved     _nodeVersion: '0.12.5',
+316 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+316 silly install resolved     dist:
+316 silly install resolved      { shasum: '535d045ce6b6363fa40117084629995e9df324c7',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz',
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: 'escape-string-regexp',
+316 silly install resolved     version: '1.0.5',
+316 silly install resolved     description: 'Escape RegExp special characters',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/sindresorhus/escape-string-regexp.git' },
+316 silly install resolved     author:
+316 silly install resolved      { name: 'Sindre Sorhus',
+316 silly install resolved        email: 'sindresorhus@gmail.com',
+316 silly install resolved        url: 'sindresorhus.com' },
+316 silly install resolved     maintainers: [ [Object], [Object] ],
+316 silly install resolved     engines: { node: '>=0.8.0' },
+316 silly install resolved     scripts: { test: 'xo && ava' },
+316 silly install resolved     files: [ 'index.js' ],
+316 silly install resolved     keywords:
+316 silly install resolved      [ 'escape',
+316 silly install resolved        'regex',
+316 silly install resolved        'regexp',
+316 silly install resolved        're',
+316 silly install resolved        'regular',
+316 silly install resolved        'expression',
+316 silly install resolved        'string',
+316 silly install resolved        'str',
+316 silly install resolved        'special',
+316 silly install resolved        'characters' ],
+316 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+316 silly install resolved     gitHead: 'db124a3e1aae9d692c4899e42a5c6c3e329eaa20',
+316 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/escape-string-regexp/issues' },
+316 silly install resolved     homepage: 'https://github.com/sindresorhus/escape-string-regexp',
+316 silly install resolved     _id: 'escape-string-regexp@1.0.5',
+316 silly install resolved     _shasum: '1b61c0562190a8dff6ae3bb2cf0200ca130b86d4',
+316 silly install resolved     _from: 'escape-string-regexp@>=1.0.2 <2.0.0',
+316 silly install resolved     _npmVersion: '2.14.12',
+316 silly install resolved     _nodeVersion: '4.2.6',
+316 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+316 silly install resolved     dist:
+316 silly install resolved      { shasum: '1b61c0562190a8dff6ae3bb2cf0200ca130b86d4',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz' },
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+316 silly install resolved        tmp: 'tmp/escape-string-regexp-1.0.5.tgz_1456059312074_0.7245344955008477' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz',
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: 'strip-ansi',
+316 silly install resolved     version: '3.0.1',
+316 silly install resolved     description: 'Strip ANSI escape codes',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/chalk/strip-ansi.git' },
+316 silly install resolved     author:
+316 silly install resolved      { name: 'Sindre Sorhus',
+316 silly install resolved        email: 'sindresorhus@gmail.com',
+316 silly install resolved        url: 'sindresorhus.com' },
+316 silly install resolved     maintainers: [ [Object], [Object] ],
+316 silly install resolved     engines: { node: '>=0.10.0' },
+316 silly install resolved     scripts: { test: 'xo && ava' },
+316 silly install resolved     files: [ 'index.js' ],
+316 silly install resolved     keywords:
+316 silly install resolved      [ 'strip',
+316 silly install resolved        'trim',
+316 silly install resolved        'remove',
+316 silly install resolved        'ansi',
+316 silly install resolved        'styles',
+316 silly install resolved        'color',
+316 silly install resolved        'colour',
+316 silly install resolved        'colors',
+316 silly install resolved        'terminal',
+316 silly install resolved        'console',
+316 silly install resolved        'string',
+316 silly install resolved        'tty',
+316 silly install resolved        'escape',
+316 silly install resolved        'formatting',
+316 silly install resolved        'rgb',
+316 silly install resolved        '256',
+316 silly install resolved        'shell',
+316 silly install resolved        'xterm',
+316 silly install resolved        'log',
+316 silly install resolved        'logging',
+316 silly install resolved        'command-line',
+316 silly install resolved        'text' ],
+316 silly install resolved     dependencies: { 'ansi-regex': '^2.0.0' },
+316 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+316 silly install resolved     gitHead: '8270705c704956da865623e564eba4875c3ea17f',
+316 silly install resolved     bugs: { url: 'https://github.com/chalk/strip-ansi/issues' },
+316 silly install resolved     homepage: 'https://github.com/chalk/strip-ansi',
+316 silly install resolved     _id: 'strip-ansi@3.0.1',
+316 silly install resolved     _shasum: '6a385fb8853d952d5ff05d0e8aaf94278dc63dcf',
+316 silly install resolved     _from: 'strip-ansi@>=3.0.0 <4.0.0',
+316 silly install resolved     _npmVersion: '2.11.3',
+316 silly install resolved     _nodeVersion: '0.12.7',
+316 silly install resolved     _npmUser: { name: 'jbnicolai', email: 'jappelman@xebia.com' },
+316 silly install resolved     dist:
+316 silly install resolved      { shasum: '6a385fb8853d952d5ff05d0e8aaf94278dc63dcf',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz' },
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+316 silly install resolved        tmp: 'tmp/strip-ansi-3.0.1.tgz_1456057278183_0.28958667791448534' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz',
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: 'has-ansi',
+316 silly install resolved     version: '2.0.0',
+316 silly install resolved     description: 'Check if a string has ANSI escape codes',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/sindresorhus/has-ansi.git' },
+316 silly install resolved     author:
+316 silly install resolved      { name: 'Sindre Sorhus',
+316 silly install resolved        email: 'sindresorhus@gmail.com',
+316 silly install resolved        url: 'sindresorhus.com' },
+316 silly install resolved     maintainers: [ [Object], [Object] ],
+316 silly install resolved     engines: { node: '>=0.10.0' },
+316 silly install resolved     scripts: { test: 'node test.js' },
+316 silly install resolved     files: [ 'index.js' ],
+316 silly install resolved     keywords:
+316 silly install resolved      [ 'ansi',
+316 silly install resolved        'styles',
+316 silly install resolved        'color',
+316 silly install resolved        'colour',
+316 silly install resolved        'colors',
+316 silly install resolved        'terminal',
+316 silly install resolved        'console',
+316 silly install resolved        'string',
+316 silly install resolved        'tty',
+316 silly install resolved        'escape',
+316 silly install resolved        'shell',
+316 silly install resolved        'xterm',
+316 silly install resolved        'command-line',
+316 silly install resolved        'text',
+316 silly install resolved        'regex',
+316 silly install resolved        'regexp',
+316 silly install resolved        're',
+316 silly install resolved        'match',
+316 silly install resolved        'test',
+316 silly install resolved        'find',
+316 silly install resolved        'pattern',
+316 silly install resolved        'has' ],
+316 silly install resolved     dependencies: { 'ansi-regex': '^2.0.0' },
+316 silly install resolved     devDependencies: { ava: '0.0.4' },
+316 silly install resolved     gitHead: '0722275e1bef139fcd09137da6e5550c3cd368b9',
+316 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/has-ansi/issues' },
+316 silly install resolved     homepage: 'https://github.com/sindresorhus/has-ansi',
+316 silly install resolved     _id: 'has-ansi@2.0.0',
+316 silly install resolved     _shasum: '34f5049ce1ecdf2b0649af3ef24e45ed35416d91',
+316 silly install resolved     _from: 'has-ansi@>=2.0.0 <3.0.0',
+316 silly install resolved     _npmVersion: '2.11.2',
+316 silly install resolved     _nodeVersion: '0.12.5',
+316 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+316 silly install resolved     dist:
+316 silly install resolved      { shasum: '34f5049ce1ecdf2b0649af3ef24e45ed35416d91',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz',
+316 silly install resolved     readme: 'ERROR: No README data found!' } ]
+317 info install ansi-styles@2.2.1 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+318 info install supports-color@2.0.0 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+319 info install escape-string-regexp@1.0.5 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+320 info install strip-ansi@3.0.1 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+321 info install has-ansi@2.0.0 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+322 info installOne ansi-styles@2.2.1
+323 verbose installOne of ansi-styles to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk not in flight; installing
+324 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+325 info installOne supports-color@2.0.0
+326 verbose installOne of supports-color to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk not in flight; installing
+327 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+328 info installOne escape-string-regexp@1.0.5
+329 verbose installOne of escape-string-regexp to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk not in flight; installing
+330 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+331 info installOne strip-ansi@3.0.1
+332 verbose installOne of strip-ansi to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk not in flight; installing
+333 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+334 info installOne has-ansi@2.0.0
+335 verbose installOne of has-ansi to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk not in flight; installing
+336 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+337 verbose lock using /Users/archana/.npm/_locks/ansi-styles-a7b22c70704968da.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+338 verbose lock using /Users/archana/.npm/_locks/supports-color-dbd73eff16238433.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+339 verbose lock using /Users/archana/.npm/_locks/escape-string-regexp-4d774512032cb188.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+340 silly install write writing ansi-styles 2.2.1 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+341 silly install write writing supports-color 2.0.0 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+342 verbose lock using /Users/archana/.npm/_locks/strip-ansi-37782c9ca5dea619.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+343 silly install write writing escape-string-regexp 1.0.5 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+344 verbose lock using /Users/archana/.npm/_locks/has-ansi-e62f73e5996be2de.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+345 silly install write writing strip-ansi 3.0.1 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+346 silly install write writing has-ansi 2.0.0 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+347 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+348 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+349 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+350 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+351 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+352 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles is being purged from base /usr/local
+353 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+354 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color is being purged from base /usr/local
+355 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+356 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp is being purged from base /usr/local
+357 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+358 verbose tar unpack /Users/archana/.npm/ansi-styles/2.2.1/package.tgz
+359 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+360 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles is being purged
+361 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+362 verbose tar unpack /Users/archana/.npm/supports-color/2.0.0/package.tgz
+363 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+364 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color is being purged
+365 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+366 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi is being purged from base /usr/local
+367 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+368 verbose tar unpack /Users/archana/.npm/escape-string-regexp/1.0.5/package.tgz
+369 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+370 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp is being purged
+371 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+372 silly gunzTarPerm modes [ '755', '644' ]
+373 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi is being purged from base /usr/local
+374 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+375 silly gunzTarPerm modes [ '755', '644' ]
+376 verbose tar unpack /Users/archana/.npm/strip-ansi/3.0.1/package.tgz
+377 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+378 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi is being purged
+379 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+380 silly gunzTarPerm modes [ '755', '644' ]
+381 verbose tar unpack /Users/archana/.npm/has-ansi/2.0.0/package.tgz
+382 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+383 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi is being purged
+384 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+385 silly gunzTarPerm modes [ '755', '644' ]
+386 silly gunzTarPerm modes [ '755', '644' ]
+387 silly gunzTarPerm extractEntry package.json
+388 silly gunzTarPerm extractEntry package.json
+389 silly gunzTarPerm extractEntry package.json
+390 silly gunzTarPerm extractEntry package.json
+391 silly gunzTarPerm extractEntry package.json
+392 silly gunzTarPerm extractEntry index.js
+393 silly gunzTarPerm extractEntry license
+394 silly gunzTarPerm extractEntry index.js
+395 silly gunzTarPerm extractEntry license
+396 silly gunzTarPerm extractEntry index.js
+397 silly gunzTarPerm extractEntry license
+398 silly gunzTarPerm extractEntry index.js
+399 silly gunzTarPerm extractEntry license
+400 silly gunzTarPerm extractEntry index.js
+401 silly gunzTarPerm extractEntry license
+402 silly gunzTarPerm extractEntry readme.md
+403 silly gunzTarPerm extractEntry readme.md
+404 silly gunzTarPerm extractEntry readme.md
+405 silly gunzTarPerm extractEntry readme.md
+406 silly gunzTarPerm extractEntry readme.md
+407 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color/package.json
+408 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/package.json
+409 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp/package.json
+410 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/package.json
+411 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles/package.json
+412 info preinstall supports-color@2.0.0
+413 info preinstall strip-ansi@3.0.1
+414 info preinstall escape-string-regexp@1.0.5
+415 info preinstall has-ansi@2.0.0
+416 info preinstall ansi-styles@2.2.1
+417 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color/package.json
+418 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/package.json
+419 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp/package.json
+420 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/package.json
+421 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles/package.json
+422 silly prepareForInstallMany adding ansi-regex@^2.0.0 from strip-ansi dependencies
+423 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/package.json
+424 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color/package.json
+425 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp/package.json
+426 silly prepareForInstallMany adding ansi-regex@^2.0.0 from has-ansi dependencies
+427 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/package.json
+428 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles/package.json
+429 silly install resolved []
+430 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+431 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+432 silly install resolved []
+433 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+434 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+435 silly cache add args [ 'ansi-regex@^2.0.0', null ]
+436 verbose cache add spec ansi-regex@^2.0.0
+437 silly cache add parsed spec Result {
+437 silly cache add   raw: 'ansi-regex@^2.0.0',
+437 silly cache add   scope: null,
+437 silly cache add   name: 'ansi-regex',
+437 silly cache add   rawSpec: '^2.0.0',
+437 silly cache add   spec: '>=2.0.0 <3.0.0',
+437 silly cache add   type: 'range' }
+438 silly addNamed ansi-regex@>=2.0.0 <3.0.0
+439 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for ansi-regex
+440 silly addNameRange { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: false }
+441 silly mapToRegistry name ansi-regex
+442 silly mapToRegistry using default registry
+443 silly mapToRegistry registry https://registry.npmjs.org/
+444 silly mapToRegistry data Result {
+444 silly mapToRegistry   raw: 'ansi-regex',
+444 silly mapToRegistry   scope: null,
+444 silly mapToRegistry   name: 'ansi-regex',
+444 silly mapToRegistry   rawSpec: '',
+444 silly mapToRegistry   spec: 'latest',
+444 silly mapToRegistry   type: 'tag' }
+445 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+446 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex not in flight; fetching
+447 silly install resolved []
+448 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+449 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+450 silly cache add args [ 'ansi-regex@^2.0.0', null ]
+451 verbose cache add spec ansi-regex@^2.0.0
+452 silly cache add parsed spec Result {
+452 silly cache add   raw: 'ansi-regex@^2.0.0',
+452 silly cache add   scope: null,
+452 silly cache add   name: 'ansi-regex',
+452 silly cache add   rawSpec: '^2.0.0',
+452 silly cache add   spec: '>=2.0.0 <3.0.0',
+452 silly cache add   type: 'range' }
+453 silly addNamed ansi-regex@>=2.0.0 <3.0.0
+454 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for ansi-regex
+455 silly addNameRange { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: false }
+456 silly mapToRegistry name ansi-regex
+457 silly mapToRegistry using default registry
+458 silly mapToRegistry registry https://registry.npmjs.org/
+459 silly mapToRegistry data Result {
+459 silly mapToRegistry   raw: 'ansi-regex',
+459 silly mapToRegistry   scope: null,
+459 silly mapToRegistry   name: 'ansi-regex',
+459 silly mapToRegistry   rawSpec: '',
+459 silly mapToRegistry   spec: 'latest',
+459 silly mapToRegistry   type: 'tag' }
+460 silly mapToRegistry uri https://registry.npmjs.org/ansi-regex
+461 verbose addNameRange registry:https://registry.npmjs.org/ansi-regex already in flight; waiting
+462 info linkStuff supports-color@2.0.0
+463 silly linkStuff supports-color@2.0.0 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules as its parent node_modules
+464 silly linkStuff supports-color@2.0.0 is part of a global install
+465 silly linkStuff supports-color@2.0.0 is installed into a global node_modules
+466 info linkStuff escape-string-regexp@1.0.5
+467 silly linkStuff escape-string-regexp@1.0.5 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules as its parent node_modules
+468 silly linkStuff escape-string-regexp@1.0.5 is part of a global install
+469 silly linkStuff escape-string-regexp@1.0.5 is installed into a global node_modules
+470 info linkStuff ansi-styles@2.2.1
+471 silly linkStuff ansi-styles@2.2.1 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules as its parent node_modules
+472 silly linkStuff ansi-styles@2.2.1 is part of a global install
+473 silly linkStuff ansi-styles@2.2.1 is installed into a global node_modules
+474 verbose request uri https://registry.npmjs.org/ansi-regex
+475 verbose request no auth needed
+476 info attempt registry request try #1 at 9:39:14 PM
+477 verbose etag W/"58d490a3-3461"
+478 verbose lastModified Fri, 24 Mar 2017 03:21:07 GMT
+479 http request GET https://registry.npmjs.org/ansi-regex
+480 verbose linkBins supports-color@2.0.0
+481 verbose linkMans supports-color@2.0.0
+482 verbose rebuildBundles supports-color@2.0.0
+483 verbose linkBins escape-string-regexp@1.0.5
+484 verbose linkMans escape-string-regexp@1.0.5
+485 verbose rebuildBundles escape-string-regexp@1.0.5
+486 verbose linkBins ansi-styles@2.2.1
+487 verbose linkMans ansi-styles@2.2.1
+488 verbose rebuildBundles ansi-styles@2.2.1
+489 info install supports-color@2.0.0
+490 info install escape-string-regexp@1.0.5
+491 info install ansi-styles@2.2.1
+492 info postinstall supports-color@2.0.0
+493 info postinstall escape-string-regexp@1.0.5
+494 info postinstall ansi-styles@2.2.1
+495 verbose unlock done using /Users/archana/.npm/_locks/supports-color-dbd73eff16238433.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/supports-color
+496 verbose unlock done using /Users/archana/.npm/_locks/escape-string-regexp-4d774512032cb188.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/escape-string-regexp
+497 verbose unlock done using /Users/archana/.npm/_locks/ansi-styles-a7b22c70704968da.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/ansi-styles
+498 http 304 https://registry.npmjs.org/ansi-regex
+499 verbose headers { date: 'Wed, 10 May 2017 16:09:14 GMT',
+499 verbose headers   via: '1.1 varnish',
+499 verbose headers   'cache-control': 'max-age=300',
+499 verbose headers   etag: 'W/"58d490a3-3461"',
+499 verbose headers   age: '30',
+499 verbose headers   connection: 'keep-alive',
+499 verbose headers   'x-served-by': 'cache-lcy1134-LCY',
+499 verbose headers   'x-cache': 'HIT',
+499 verbose headers   'x-cache-hits': '3',
+499 verbose headers   'x-timer': 'S1494432555.730095,VS0,VE0',
+499 verbose headers   vary: 'Accept-Encoding' }
+500 silly get cb [ 304,
+500 silly get   { date: 'Wed, 10 May 2017 16:09:14 GMT',
+500 silly get     via: '1.1 varnish',
+500 silly get     'cache-control': 'max-age=300',
+500 silly get     etag: 'W/"58d490a3-3461"',
+500 silly get     age: '30',
+500 silly get     connection: 'keep-alive',
+500 silly get     'x-served-by': 'cache-lcy1134-LCY',
+500 silly get     'x-cache': 'HIT',
+500 silly get     'x-cache-hits': '3',
+500 silly get     'x-timer': 'S1494432555.730095,VS0,VE0',
+500 silly get     vary: 'Accept-Encoding' } ]
+501 verbose etag https://registry.npmjs.org/ansi-regex from cache
+502 verbose get saving ansi-regex to /Users/archana/.npm/registry.npmjs.org/ansi-regex/.cache.json
+503 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+504 silly addNameRange number 2 { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: true }
+505 silly addNameRange versions [ 'ansi-regex',
+505 silly addNameRange   [ '0.1.0',
+505 silly addNameRange     '0.2.0',
+505 silly addNameRange     '0.2.1',
+505 silly addNameRange     '1.0.0',
+505 silly addNameRange     '1.1.0',
+505 silly addNameRange     '1.1.1',
+505 silly addNameRange     '2.0.0',
+505 silly addNameRange     '2.1.1' ] ]
+506 silly addNamed ansi-regex@2.1.1
+507 verbose addNamed "2.1.1" is a plain semver version for ansi-regex
+508 silly addNameRange number 2 { name: 'ansi-regex', range: '>=2.0.0 <3.0.0', hasData: true }
+509 silly addNameRange versions [ 'ansi-regex',
+509 silly addNameRange   [ '0.1.0',
+509 silly addNameRange     '0.2.0',
+509 silly addNameRange     '0.2.1',
+509 silly addNameRange     '1.0.0',
+509 silly addNameRange     '1.1.0',
+509 silly addNameRange     '1.1.1',
+509 silly addNameRange     '2.0.0',
+509 silly addNameRange     '2.1.1' ] ]
+510 silly addNamed ansi-regex@2.1.1
+511 verbose addNamed "2.1.1" is a plain semver version for ansi-regex
+512 silly cache afterAdd ansi-regex@2.1.1
+513 verbose afterAdd /Users/archana/.npm/ansi-regex/2.1.1/package/package.json not in flight; writing
+514 verbose correctMkdir /Users/archana/.npm correctMkdir not in flight; initializing
+515 silly cache afterAdd ansi-regex@2.1.1
+516 verbose afterAdd /Users/archana/.npm/ansi-regex/2.1.1/package/package.json already in flight; not writing
+517 verbose afterAdd /Users/archana/.npm/ansi-regex/2.1.1/package/package.json written
+518 silly install resolved [ { name: 'ansi-regex',
+518 silly install resolved     version: '2.1.1',
+518 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+518 silly install resolved     license: 'MIT',
+518 silly install resolved     repository:
+518 silly install resolved      { type: 'git',
+518 silly install resolved        url: 'git+https://github.com/chalk/ansi-regex.git' },
+518 silly install resolved     author:
+518 silly install resolved      { name: 'Sindre Sorhus',
+518 silly install resolved        email: 'sindresorhus@gmail.com',
+518 silly install resolved        url: 'sindresorhus.com' },
+518 silly install resolved     maintainers: [ [Object], [Object] ],
+518 silly install resolved     engines: { node: '>=0.10.0' },
+518 silly install resolved     scripts:
+518 silly install resolved      { test: 'xo && ava --verbose',
+518 silly install resolved        'view-supported': 'node fixtures/view-codes.js' },
+518 silly install resolved     files: [ 'index.js' ],
+518 silly install resolved     keywords:
+518 silly install resolved      [ 'ansi',
+518 silly install resolved        'styles',
+518 silly install resolved        'color',
+518 silly install resolved        'colour',
+518 silly install resolved        'colors',
+518 silly install resolved        'terminal',
+518 silly install resolved        'console',
+518 silly install resolved        'cli',
+518 silly install resolved        'string',
+518 silly install resolved        'tty',
+518 silly install resolved        'escape',
+518 silly install resolved        'formatting',
+518 silly install resolved        'rgb',
+518 silly install resolved        '256',
+518 silly install resolved        'shell',
+518 silly install resolved        'xterm',
+518 silly install resolved        'command-line',
+518 silly install resolved        'text',
+518 silly install resolved        'regex',
+518 silly install resolved        'regexp',
+518 silly install resolved        're',
+518 silly install resolved        'match',
+518 silly install resolved        'test',
+518 silly install resolved        'find',
+518 silly install resolved        'pattern' ],
+518 silly install resolved     devDependencies: { ava: '0.17.0', xo: '0.16.0' },
+518 silly install resolved     xo: { rules: [Object] },
+518 silly install resolved     gitHead: '7c908e7b4eb6cd82bfe1295e33fdf6d166c7ed85',
+518 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-regex/issues' },
+518 silly install resolved     homepage: 'https://github.com/chalk/ansi-regex#readme',
+518 silly install resolved     _id: 'ansi-regex@2.1.1',
+518 silly install resolved     _shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+518 silly install resolved     _from: 'ansi-regex@>=2.0.0 <3.0.0',
+518 silly install resolved     _npmVersion: '2.14.2',
+518 silly install resolved     _nodeVersion: '0.10.32',
+518 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+518 silly install resolved     dist:
+518 silly install resolved      { shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+518 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz' },
+518 silly install resolved     _npmOperationalInternal:
+518 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+518 silly install resolved        tmp: 'tmp/ansi-regex-2.1.1.tgz_1484363378013_0.4482989883981645' },
+518 silly install resolved     directories: {},
+518 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz',
+518 silly install resolved     readme: 'ERROR: No README data found!' } ]
+519 info install ansi-regex@2.1.1 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+520 info installOne ansi-regex@2.1.1
+521 verbose installOne of ansi-regex to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi not in flight; installing
+522 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+523 silly install resolved [ { name: 'ansi-regex',
+523 silly install resolved     version: '2.1.1',
+523 silly install resolved     description: 'Regular expression for matching ANSI escape codes',
+523 silly install resolved     license: 'MIT',
+523 silly install resolved     repository:
+523 silly install resolved      { type: 'git',
+523 silly install resolved        url: 'git+https://github.com/chalk/ansi-regex.git' },
+523 silly install resolved     author:
+523 silly install resolved      { name: 'Sindre Sorhus',
+523 silly install resolved        email: 'sindresorhus@gmail.com',
+523 silly install resolved        url: 'sindresorhus.com' },
+523 silly install resolved     maintainers: [ [Object], [Object] ],
+523 silly install resolved     engines: { node: '>=0.10.0' },
+523 silly install resolved     scripts:
+523 silly install resolved      { test: 'xo && ava --verbose',
+523 silly install resolved        'view-supported': 'node fixtures/view-codes.js' },
+523 silly install resolved     files: [ 'index.js' ],
+523 silly install resolved     keywords:
+523 silly install resolved      [ 'ansi',
+523 silly install resolved        'styles',
+523 silly install resolved        'color',
+523 silly install resolved        'colour',
+523 silly install resolved        'colors',
+523 silly install resolved        'terminal',
+523 silly install resolved        'console',
+523 silly install resolved        'cli',
+523 silly install resolved        'string',
+523 silly install resolved        'tty',
+523 silly install resolved        'escape',
+523 silly install resolved        'formatting',
+523 silly install resolved        'rgb',
+523 silly install resolved        '256',
+523 silly install resolved        'shell',
+523 silly install resolved        'xterm',
+523 silly install resolved        'command-line',
+523 silly install resolved        'text',
+523 silly install resolved        'regex',
+523 silly install resolved        'regexp',
+523 silly install resolved        're',
+523 silly install resolved        'match',
+523 silly install resolved        'test',
+523 silly install resolved        'find',
+523 silly install resolved        'pattern' ],
+523 silly install resolved     devDependencies: { ava: '0.17.0', xo: '0.16.0' },
+523 silly install resolved     xo: { rules: [Object] },
+523 silly install resolved     gitHead: '7c908e7b4eb6cd82bfe1295e33fdf6d166c7ed85',
+523 silly install resolved     bugs: { url: 'https://github.com/chalk/ansi-regex/issues' },
+523 silly install resolved     homepage: 'https://github.com/chalk/ansi-regex#readme',
+523 silly install resolved     _id: 'ansi-regex@2.1.1',
+523 silly install resolved     _shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+523 silly install resolved     _from: 'ansi-regex@>=2.0.0 <3.0.0',
+523 silly install resolved     _npmVersion: '2.14.2',
+523 silly install resolved     _nodeVersion: '0.10.32',
+523 silly install resolved     _npmUser: { name: 'qix', email: 'i.am.qix@gmail.com' },
+523 silly install resolved     dist:
+523 silly install resolved      { shasum: 'c3b33ab5ee360d86e0e628f0468ae7ef27d654df',
+523 silly install resolved        tarball: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz' },
+523 silly install resolved     _npmOperationalInternal:
+523 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+523 silly install resolved        tmp: 'tmp/ansi-regex-2.1.1.tgz_1484363378013_0.4482989883981645' },
+523 silly install resolved     directories: {},
+523 silly install resolved     _resolved: 'https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz',
+523 silly install resolved     readme: 'ERROR: No README data found!' } ]
+524 info install ansi-regex@2.1.1 into /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+525 info installOne ansi-regex@2.1.1
+526 verbose installOne of ansi-regex to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi not in flight; installing
+527 verbose correctMkdir /Users/archana/.npm/_locks correctMkdir not in flight; initializing
+528 verbose lock using /Users/archana/.npm/_locks/ansi-regex-f948c3b94fe96a0c.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+529 silly install write writing ansi-regex 2.1.1 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+530 verbose lock using /Users/archana/.npm/_locks/ansi-regex-1ecabe3ea3199070.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+531 silly install write writing ansi-regex 2.1.1 to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+532 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+533 verbose unbuild lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+534 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex is being purged from base /usr/local
+535 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+536 verbose tar unpack /Users/archana/.npm/ansi-regex/2.1.1/package.tgz
+537 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+538 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex is being purged
+539 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+540 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex is being purged from base /usr/local
+541 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+542 silly gunzTarPerm modes [ '755', '644' ]
+543 verbose tar unpack /Users/archana/.npm/ansi-regex/2.1.1/package.tgz
+544 verbose tar unpacking to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+545 silly gentlyRm /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex is being purged
+546 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+547 silly gunzTarPerm modes [ '755', '644' ]
+548 silly gunzTarPerm extractEntry package.json
+549 silly gunzTarPerm extractEntry package.json
+550 silly gunzTarPerm extractEntry index.js
+551 silly gunzTarPerm extractEntry license
+552 silly gunzTarPerm extractEntry index.js
+553 silly gunzTarPerm extractEntry license
+554 silly gunzTarPerm extractEntry readme.md
+555 silly gunzTarPerm extractEntry readme.md
+556 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json
+557 verbose write writing to /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json
+558 info preinstall ansi-regex@2.1.1
+559 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json
+560 info preinstall ansi-regex@2.1.1
+561 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json
+562 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/package.json
+563 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/package.json
+564 silly install resolved []
+565 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+566 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+567 info linkStuff ansi-regex@2.1.1
+568 silly linkStuff ansi-regex@2.1.1 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules as its parent node_modules
+569 silly linkStuff ansi-regex@2.1.1 is part of a global install
+570 silly linkStuff ansi-regex@2.1.1 is installed into a global node_modules
+571 silly install resolved []
+572 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+573 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+574 verbose linkBins ansi-regex@2.1.1
+575 verbose linkMans ansi-regex@2.1.1
+576 verbose rebuildBundles ansi-regex@2.1.1
+577 info install ansi-regex@2.1.1
+578 info linkStuff ansi-regex@2.1.1
+579 silly linkStuff ansi-regex@2.1.1 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules as its parent node_modules
+580 silly linkStuff ansi-regex@2.1.1 is part of a global install
+581 silly linkStuff ansi-regex@2.1.1 is installed into a global node_modules
+582 info postinstall ansi-regex@2.1.1
+583 verbose linkBins ansi-regex@2.1.1
+584 verbose linkMans ansi-regex@2.1.1
+585 verbose rebuildBundles ansi-regex@2.1.1
+586 verbose unlock done using /Users/archana/.npm/_locks/ansi-regex-f948c3b94fe96a0c.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex
+587 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+588 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+589 info install ansi-regex@2.1.1
+590 info postinstall ansi-regex@2.1.1
+591 info linkStuff strip-ansi@3.0.1
+592 silly linkStuff strip-ansi@3.0.1 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules as its parent node_modules
+593 silly linkStuff strip-ansi@3.0.1 is part of a global install
+594 silly linkStuff strip-ansi@3.0.1 is installed into a global node_modules
+595 verbose unlock done using /Users/archana/.npm/_locks/ansi-regex-1ecabe3ea3199070.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex
+596 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+597 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+598 verbose linkBins strip-ansi@3.0.1
+599 verbose linkMans strip-ansi@3.0.1
+600 verbose rebuildBundles strip-ansi@3.0.1
+601 verbose rebuildBundles [ 'ansi-regex' ]
+602 info install strip-ansi@3.0.1
+603 info linkStuff has-ansi@2.0.0
+604 silly linkStuff has-ansi@2.0.0 has /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules as its parent node_modules
+605 silly linkStuff has-ansi@2.0.0 is part of a global install
+606 silly linkStuff has-ansi@2.0.0 is installed into a global node_modules
+607 info postinstall strip-ansi@3.0.1
+608 verbose linkBins has-ansi@2.0.0
+609 verbose linkMans has-ansi@2.0.0
+610 verbose rebuildBundles has-ansi@2.0.0
+611 verbose rebuildBundles [ 'ansi-regex' ]
+612 info install has-ansi@2.0.0
+613 verbose unlock done using /Users/archana/.npm/_locks/strip-ansi-37782c9ca5dea619.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/strip-ansi
+614 info postinstall has-ansi@2.0.0
+615 verbose unlock done using /Users/archana/.npm/_locks/has-ansi-e62f73e5996be2de.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk/node_modules/has-ansi
+616 verbose about to build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+617 info build /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+618 info linkStuff chalk@1.1.3
+619 silly linkStuff chalk@1.1.3 has /usr/local/lib/node_modules/react-vr-cli/node_modules as its parent node_modules
+620 silly linkStuff chalk@1.1.3 is part of a global install
+621 silly linkStuff chalk@1.1.3 is installed into a global node_modules
+622 verbose linkBins chalk@1.1.3
+623 verbose linkMans chalk@1.1.3
+624 verbose rebuildBundles chalk@1.1.3
+625 verbose rebuildBundles [ 'ansi-styles',
+625 verbose rebuildBundles   'escape-string-regexp',
+625 verbose rebuildBundles   'has-ansi',
+625 verbose rebuildBundles   'strip-ansi',
+625 verbose rebuildBundles   'supports-color' ]
+626 info install chalk@1.1.3
+627 info postinstall chalk@1.1.3
+628 verbose unlock done using /Users/archana/.npm/_locks/chalk-c74b265dd8221cdd.lock for /usr/local/lib/node_modules/react-vr-cli/node_modules/chalk
+629 verbose about to build /usr/local/lib/node_modules/react-vr-cli
+630 info build /usr/local/lib/node_modules/react-vr-cli
+631 info linkStuff react-vr-cli@0.3.1
+632 silly linkStuff react-vr-cli@0.3.1 has /usr/local/lib/node_modules as its parent node_modules
+633 silly linkStuff react-vr-cli@0.3.1 is part of a global install
+634 silly linkStuff react-vr-cli@0.3.1 is installed into a global node_modules
+635 silly linkStuff react-vr-cli@0.3.1 is installed into the top-level global node_modules
+636 verbose linkBins react-vr-cli@0.3.1
+637 verbose link bins [ { 'react-vr': 'index.js' }, '/usr/local/bin', true ]
+638 verbose linkMans react-vr-cli@0.3.1
+639 verbose rebuildBundles react-vr-cli@0.3.1
+640 verbose rebuildBundles [ 'chalk' ]
+641 silly gentlyRm /usr/local/bin/react-vr is being gently removed
+642 silly gentlyRm verifying /usr/local is an npm working directory
+643 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+644 silly gentlyRm deletion target /usr/local/bin/react-vr is under /usr/local
+645 verbose gentlyRm vacuuming from /usr/local/bin/react-vr up to /usr/local
+646 info install react-vr-cli@0.3.1
+647 info postinstall react-vr-cli@0.3.1
+648 verbose unlock done using /Users/archana/.npm/_locks/react-vr-cli-2e60bb63133c5fa1.lock for /usr/local/lib/node_modules/react-vr-cli
+649 verbose validateInstall loading /usr/local/lib/package.json for validation
+650 verbose stack Error: The package webpack@2.2.0-rc.3 does not satisfy its siblings' peerDependencies requirements!
+650 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+650 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+650 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+650 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+650 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+650 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+650 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+650 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+650 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+650 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+651 verbose cwd /Users/archana/Documents/gurlInTheDark.github.io
+652 error Darwin 16.1.0
+653 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "react-vr-cli"
+654 error node v4.4.5
+655 error npm  v2.15.5
+656 error code EPEERINVALID
+657 error peerinvalid The package webpack@2.2.0-rc.3 does not satisfy its siblings' peerDependencies requirements!
+657 error peerinvalid Peer @ngtools/webpack@1.2.3 wants webpack@2.2.0-rc.3
+657 error peerinvalid Peer extract-text-webpack-plugin@2.0.0-beta.4 wants webpack@^2.1.0-beta.19
+657 error peerinvalid Peer html-webpack-plugin@2.26.0 wants webpack@1 || ^2 || ^2.1.0-beta || ^2.2.0-rc
+657 error peerinvalid Peer karma-webpack@1.8.1 wants webpack@^1.1.0 || ^2 || ^2.1.0-beta || ^2.2.0-rc
+657 error peerinvalid Peer sass-loader@4.1.1 wants webpack@^2 || ^2.2.0-rc.0 || ^2.1.0-beta || ^1.12.6
+657 error peerinvalid Peer webpack-dev-server@2.2.0-rc.0 wants webpack@^2.1.0-beta.26 || ^2.2.0-rc.0
+658 verbose exit [ 1, true ]
