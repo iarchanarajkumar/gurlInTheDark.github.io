@@ -3,7 +3,7 @@ body{
 	margin: 1rem;
 	background: #fff;
 	color: #616366;
-	font-family: 'Roboto', cursive;
+	font-family: 'Open Sans', sans-serif;
 	font-size:18px;
 	justify-content: center;
 
@@ -150,6 +150,7 @@ img{
 .experienceItems,.workItems{
 	display: flex;
 	flex-direction: column;
+	line-height: 3em;
 }
 
 .baseStand{
