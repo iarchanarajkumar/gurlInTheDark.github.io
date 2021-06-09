@@ -1,194 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio</title>
+	<title>Archana Rajkumar</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta charset="utf-8">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="Portfolio/portfolio.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<script type="text/javascript">
+
+
 	</script>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="welcome">
-    <p>Welcome to my site!</p>
-    <p class="smaller">Press enter to proceed... <span>|</span></p>
-  </div>
-  <ul class="navbar list-inline">
-    <li class="navbar-brand"></li>
+	<div  id="nail"></div>
+	<div class="thread"></div>
+	<div class="tile homeTile" id="home">
+		<section class="leftPanel">
+			<span id="title">Hi, I'm Archana</span>
+			<h4>UI Developer, Xactly Technologies</h4>
+			<div class="menuItems">
+				<div class="navPills"><a href="#work">My Work</a></div>
+				<div class="navPills"><a href="#experience">My Experience</a></div>
+				<div class="navPills"><a href="#aboutMe">More About Me</a></div>
+			</div>
+			<div class="contactWindow">
+				<span>Get in touch with me on:</span>
+				<span class="contactPills"><a href="https://www.linkedin.com/in/archanarajkumar/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+				<span class="contactPills"><a href="https://codepen.io/gurlinthedark/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></span>
+				<span class="contactPills"><a href="https://twitter.com/GurlinTheDark30" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
 
-    <li class="nav  pull-right" id="contact_link" onclick="portfolio.contactMe()">Contact</li>
-		  <li class="nav pull-right" id="experience_link" onclick="portfolio.experience()">Work</li>
-    <li class="nav pull-right" id="skills_link" onclick="portfolio.skillSet()">Skills</li>
+			</div>
+		</section>
+		<section class="rightPanel">
+			<img src="Portfolio/imgs/myAvatar.png"/>
 
-    <li class="nav pull-right" id="home_link" onclick="portfolio.goHome()">Home</li>
-  </ul>
-	<div class="container">
-    <div class="jumbotron" id="home">
-      <div>Hi there!</div>
-      <div>I'm Archana Rajkumar, currently working at Deloitte Ilabs.</div>
-      <div>I started my career with CDK global(Formerly ADP Pvt. Ltd), as Member Technical. I also worked at  Dreamworks Animations, India as R&amp;	D UI Engineer.</div>
-      <div> I have experience developing and owning UI workflows from end to end (Wireframing, Prototyping, Developing, Testing, Maintaining) using JS frameworks including Angular and React</div>
-		  <br/>
-      <blockquote> Every morning in Africa, a Gazelle wakes up, It knows it must run faster than the fastest lion or it will be killed.
-         Every morning a Lion wakes up, It knows it must outrun the slowest Gazelle or it will starve to death. It doesn't matter whether you are a Lion or a Gazelle...
-        when the sun comes up, you'd better be running</blockquote>
-        <div id="horse" class="text-center"></div>
-
-    </div>
-
-		<div class="jumbotron" id="work">
-	<div class=" text-center">
-				<div class="mywork"><a href="https://gurlinthedark.github.io/couple"> Couple done using SVG</a></div>
-
-				<div class="mywork"><a href="https://gurlinthedark.github.io/landscape"> Landscape done using SVG</a></div>
-
-				<div class="mywork"><a href="https://gurlinthedark.github.io/photoStick"> Add smileys to images</a></div>
-				<div class="mywork"><a href="https://gurlinthedark.github.io/gridGame"> Simple JS game</a></div>
-				<div class="mywork"><a href="https://github.com/gurlinthedark"> For more..</a></div>
+		</section>
+	</div>
+	<div class="thread"></div>
+	<div class="tile" id="work">
+		<span id="title">Work</span>
+		<div class="workItems">
+			<span class="experiencePills">I have more than eight years of experience in front end technologies.</span>
+			<span class="experiencePills">Currently working at Xactly Technologies as a Senior Software Developer.</span>
+			<span class="experiencePills">Worked at Deloitte as Consultant Technology for 10 months</span>
+			<span class="experiencePills">Worked at Dreamworks, India as a R&D Engineer for 15 months</span>
+			<span class="experiencePills">Worked at CDK Global as a Software Engineer - UI for 36 months</span>
 			</div>
 	</div>
+	<div class="thread"></div>
+	<div class="tile" id="experience">
+		<span id="title">Experience</span>
+		<div class="experienceItems">
+					<span>I have worked on multiple front end technologies tools</span>
+					<span class="experiencePills">React</span>
+					<span class="experiencePills">Redux</span>
+					<span class="experiencePills">Flux</span>
+					<span class="experiencePills">Angular JS</span>
+					<span class="experiencePills">HTML</span>
+					<span class="experiencePills">CSS</span>
+					<span class="experiencePills">Webpack</span>
+					<span class="experiencePills">Grunt</span>
 
-		<div class="jumbotron" id="skills">
-			<div class="skillset text-center">
-				<div class="skills">
-					HTML
-				</div>
-				<div class="skills">
-					LESS/CSS
-				</div>
-				<div class="skills">
-					Bootstrap3
-				</div>
-				<div class="skills">
-					Javascript
-				</div>
-				<div class="skills">
-					JQuery
-				</div>
-				<div class="skills">
-					AngularJS
-				</div>
-        <div class="skills">
-					Ajax
-				</div>
-
-				<div class="skills">
-					UnderscoreJS
-				</div>
-				<div class="skills">
-					RXJS
-				</div>
-				<div class="skills">
-					React
-				</div>
-				<div class="skills">
-					Redux
-				</div>
-				<div class="skills">
-					NodeJS
-				</div>
-				<div class="skills">
-					Karma/Jasmine
-				</div>
-				<div class="skills">
-					Npm
-				</div>
-				<div class="skills">
-					Grunt
-				</div>
-				<div class="skills">
-					Webpack
-				</div>
 			</div>
-		</div>
-		<div class="jumbotron" id="contact">
-			<h1 class="text-center">CONTACT ME</h1>
-			<div class="icons text-center">
-				<div><span class="glyphicon glyphicon-home"></span>I live in Bangalore, India.</div>
-				<div><span class="glyphicon glyphicon-envelope"></span>archana.rajkumar30@gmail.com</div>
-        <br/><br/>
-        <div>You can also catch me on </div>
-				<span><a href="https://www.linkedin.com/in/archanarajkumar" id="linkedInIcon"></a></span> <span><a href="https://twitter.com/gurlInTheDark30" id="twitterIcon"></a></span> <span><a href="mailto:archanarajkumar30@gmail.com" id="emailMeIcon"></a></span>
-			</div>
-		</div>
-		<script>
-		    var portfolio={};
-        $(document).keypress(function(e) {
-          if(e.which == 13) {
-            if ($('.welcome').is(":visible")){;
-
-            $('.welcome').hide()
-            $('#home_link').css("color", "#FFFFFF");
-            $('#horse').css('display','block');
-
-          }
-          else if($('#home').is(":visible")){
-            portfolio.skillSet()
-
-          }
-          else if($('#work').is(":visible")){
-						  portfolio.contactMe()
-
-
-          }
-          else if($('#skills').is(":visible")){
-          portfolio.experience()
-          }
-          else{
-          portfolio.goHome()
-
-          }
-          }
-        });
-
-
-		    portfolio.contactMe= function(){
-		      $('#home').css("display", "none");
-		      $('#skills').css("display", "none");
-		      $('#contact').css("display", "block");
-          $('#work').css("display", "none");
-          $('#experience_link').css("color", '#CC978E');
-		        $('#home_link').css("color", "#CC978E");
-		        $('#skills_link').css("color", '#CC978E');
-		        $('#contact_link').css("color", "#FFFFFF");
-		    }
-		    portfolio.skillSet= function(){
-		      $('#home').css("display", "none");
-		      $('#skills').css("display", "block");
-		      $('#contact').css("display", "none");
-          $('#work').css("display", "none");
-          $('#experience_link').css("color", '#CC978E');
-		      $('#home_link').css("color", "#CC978E");
-		      $('#contact_link').css("color", '#CC978E');
-		      $('#skills_link').css("color", "#FFFFFF");
-		    }
-		    portfolio.goHome= function(){
-		      $('#home').css("display", "block");
-		      $('#skills').css("display", "none");
-		      $('#contact').css("display", "none");
-          $('#work').css("display", "none");
-		      $('#skills_link').css("color", "#CC978E");
-		      $('#contact_link').css("color", '#CC978E');
-          $('#experience_link').css("color", '#CC978E');
-		      $('#home_link').css("color", "#FFFFFF");
-		    }
-        portfolio.experience= function(){
-          $('#work').css("display", "block");
-          $('#skills').css("display", "none");
-          $('#contact').css("display", "none");
-          $('#home').css("display", "none");
-          $('#skills_link').css("color", "#CC978E");
-          $('#contact_link').css("color", '#CC978E');
-          $('#home_link').css("color", '#CC978E');
-          $('#experience_link').css("color", "#FFFFFF");
-        }
-
-		</script>
 	</div>
+	<div class="thread">
+
+	</div>
+	<div class="tile" id="aboutMe">
+		<span id="title">About Me</span>
+		<div class="experienceItems">
+		<span>I Love learning new things </span>
+		<span>Plants make me happy! </span>
+		<span>Student of Carnatic music and enjoy listening to different genres </span>
+		<span>Enjoy reading romance, fantasy novels</span>
+		</div>
+	</div>
+	<div class="thread">
+
+	</div>
+	<div class="baseStand"></div>
 </body>
+
 </html>
